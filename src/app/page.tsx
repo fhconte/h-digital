@@ -125,7 +125,7 @@ export default function Home() {
               <li key={item.href}>
                 <a
                   href={item.href}
-                  className="transition-colors hover:text-[#c45c26]"
+                  className="transition-colors hover:text-accent"
                 >
                   {item.label}
                 </a>
@@ -170,7 +170,7 @@ export default function Home() {
           className="w-full scroll-mt-28 px-6 py-16 lg:px-12 lg:py-24"
         >
           <div className="max-w-3xl">
-            <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[#c45c26]">
+            <p className="text-sm font-semibold uppercase tracking-[0.2em] text-accent">
               Soluções
             </p>
             <h2 className="mt-4 text-2xl font-semibold tracking-tight sm:text-3xl lg:text-4xl">
@@ -212,7 +212,7 @@ export default function Home() {
               {whyMicro.map((item) => (
                 <div
                   key={item.title}
-                  className="border-t-2 border-[#c45c26] pt-4"
+                  className="border-t-2 border-accent pt-4"
                 >
                   <h4 className="font-semibold text-neutral-900">{item.title}</h4>
                   <p className="mt-2 text-sm leading-7 text-neutral-600">
@@ -240,13 +240,13 @@ export default function Home() {
               </ul>
             </div>
             <div>
-              <h3 className="text-lg font-semibold text-[#c45c26]">
+              <h3 className="text-lg font-semibold text-accent">
                 H Digital · microsoluções
               </h3>
               <ul className="mt-4 space-y-3 text-neutral-700">
                 {comparison.micro.map((item) => (
                   <li key={item} className="flex gap-3">
-                    <span className="text-[#c45c26]" aria-hidden>
+                    <span className="text-accent" aria-hidden>
                       +
                     </span>
                     {item}
@@ -264,7 +264,7 @@ export default function Home() {
               <ul className="mt-8 space-y-4 text-lg text-neutral-700">
                 {microsolutionExamples.map((item) => (
                   <li key={item} className="flex gap-3">
-                    <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-[#c45c26]" />
+                    <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-accent" />
                     {item}
                   </li>
                 ))}
@@ -305,7 +305,7 @@ export default function Home() {
           id="projetos"
           className="w-full scroll-mt-28 border-t border-neutral-100 bg-neutral-50 px-6 py-16 lg:px-12 lg:py-24"
         >
-          <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[#c45c26]">
+          <p className="text-sm font-semibold uppercase tracking-[0.2em] text-accent">
             Projetos
           </p>
           <h2 className="mt-4 text-2xl font-semibold tracking-tight sm:text-3xl">
@@ -343,7 +343,7 @@ export default function Home() {
             Tem outra dor em mente?{" "}
             <a
               href="#contato"
-              className="font-medium text-[#c45c26] underline-offset-4 hover:underline"
+              className="font-medium text-accent underline-offset-4 hover:underline"
             >
               Fale conosco
             </a>{" "}
@@ -369,10 +369,10 @@ export default function Home() {
           </div>
           <div className="text-sm text-neutral-500">
             <a
-              href="mailto:flaviohconte@gmail.com"
-              className="text-lg font-medium text-neutral-800 transition-colors hover:text-[#c45c26]"
+              href="mailto:hdgtldevelopment@gmail.com"
+              className="text-lg font-medium text-neutral-800 transition-colors hover:text-accent"
             >
-              flaviohconte@gmail.com
+              hdgtldevelopment@gmail.com
             </a>
             <p className="mt-6">© {new Date().getFullYear()} H Digital</p>
           </div>
