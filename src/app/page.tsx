@@ -9,7 +9,7 @@ const navItems = [
 const microsolutionExamples = [
   "Design systems, sites e protótipos interativos",
   "MVPs, validação e auditoria de produto",
-  "Dashboards, ferramentas internas e e-commerce enxuto",
+  "Dashboards e ferramentas internas",
   "Automações, APIs, formulários e assistentes",
 ];
 
@@ -72,11 +72,6 @@ const products = [
     title: "Ferramentas internas",
     description:
       "CRMs simples, gestão de leads, agendas e fluxos operacionais feitos para o seu processo.",
-  },
-  {
-    title: "E-commerce enxuto",
-    description:
-      "Vitrine, catálogo e checkout sem a complexidade de um marketplace — vender online com o essencial.",
   },
   {
     title: "Formulários e onboarding",
