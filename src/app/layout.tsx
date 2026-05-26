@@ -8,9 +8,9 @@ const geistSans = Geist({
 });
 
 export const metadata: Metadata = {
-  title: "H Digital | Incubadora de microsoluções de tecnologia",
+  title: "H Digital | Incubadora de soluções digitais",
   description:
-    "Incubadora de microsoluções de tecnologia: produtos digitais enxutos, com escopo claro e entrega rápida — MVPs, automações, dashboards e ferramentas sob medida.",
+    "Incubadora de soluções digitais com escopo definido e entrega previsível — MVPs, automações, dashboards e produtos sob medida que geram resultado real.",
 };
 
 export default function RootLayout({

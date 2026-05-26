@@ -1,92 +1,118 @@
 import Image from "next/image";
+import { SiteHeader } from "@/components/site-header";
 
-const navItems = [
-  { label: "Soluções", href: "#solucoes" },
-  { label: "Projetos", href: "#projetos" },
-  { label: "Contato", href: "#contato" },
-];
-
-const microsolutionExamples = [
+const solutionExamples = [
   "Design systems, sites e protótipos interativos",
   "MVPs, validação e auditoria de produto",
   "Dashboards e ferramentas internas",
   "Automações, APIs, formulários e assistentes",
+  "Observabilidade, testes automatizados e qualidade em produção",
 ];
 
-const whyMicro = [
+const whyFocused = [
   {
     title: "Escopo definido",
-    text: "Cada entrega resolve um problema específico — sem prometer um monólito gigante desde o dia um.",
+    text: "Você sabe o que será entregue antes de começar — sem surpresas, sem projeto que cresce sem controle.",
   },
   {
-    title: "Ciclos mais curtos",
-    text: "Menos burocracia de startup, mais construção. Do conceito ao uso real em prazos realistas.",
+    title: "Resultado no prazo",
+    text: "Ciclos curtos e objetivos. Do conceito ao uso real, com marcos claros em vez de promessas distantes.",
   },
   {
-    title: "Menor risco",
-    text: "Investimento e complexidade proporcionais ao tamanho da solução, não ao tamanho do discurso.",
+    title: "Investimento previsível",
+    text: "Cada entrega tem proposta fechada. Você investe no que resolve a dor, não em discurso de escala.",
   },
   {
-    title: "Impacto direto",
-    text: "Ferramentas que as pessoas usam no dia a dia, não apresentações que ficam na gaveta.",
+    title: "Impacto mensurável",
+    text: "Ferramentas que as pessoas usam no dia a dia — com métricas, feedback e evolução baseada em uso real.",
   },
 ];
 
-const products = [
+const productCategories = [
   {
-    title: "Design Systems sob medida",
-    description:
-      "Tokens, componentes e documentação para seu produto manter consistência visual e velocidade no desenvolvimento.",
+    label: "Produto e experiência",
+    products: [
+      {
+        title: "Design Systems sob medida",
+        description:
+          "Tokens, componentes e documentação para seu produto manter consistência visual e velocidade no desenvolvimento.",
+      },
+      {
+        title: "MVPs e validação",
+        description:
+          "Versão funcional para testar hipóteses com usuários reais antes de comprometer budget em escala.",
+      },
+      {
+        title: "Landing pages e sites",
+        description:
+          "Páginas rápidas, objetivas e com mensagem clara — institucional, campanha ou lançamento.",
+      },
+      {
+        title: "Protótipos interativos",
+        description:
+          "Do conceito ao clique: protótipos navegáveis para alinhar time, cliente e investimento.",
+      },
+      {
+        title: "Auditoria de produto digital",
+        description:
+          "Análise focada de UX, performance e código — diagnóstico claro e prioridades de melhoria.",
+      },
+    ],
   },
   {
-    title: "MVPs e validação",
-    description:
-      "Versão mínima funcional para testar hipóteses com usuários reais antes de investir pesado.",
+    label: "Operação e dados",
+    products: [
+      {
+        title: "Dashboards e painéis",
+        description:
+          "Interfaces para visualizar dados, acompanhar métricas e apoiar decisões do dia a dia.",
+      },
+      {
+        title: "Ferramentas internas",
+        description:
+          "CRMs, gestão de leads, agendas e fluxos operacionais feitos para o seu processo.",
+      },
+      {
+        title: "Formulários e onboarding",
+        description:
+          "Cadastros, questionários, KYC leve e jornadas de entrada — fluxos claros que convertem e orientam.",
+      },
+    ],
   },
   {
-    title: "Landing pages e sites",
-    description:
-      "Páginas enxutas, rápidas e com mensagem clara — institucional, campanha ou lançamento.",
+    label: "Integração e backend",
+    products: [
+      {
+        title: "Automações e integrações",
+        description:
+          "Conectamos ferramentas, APIs e fluxos para eliminar trabalho manual repetitivo.",
+      },
+      {
+        title: "Assistentes e chatbots",
+        description:
+          "Suporte automatizado, FAQ inteligente ou triagem de demandas com escopo definido e mensurável.",
+      },
+      {
+        title: "APIs e microsserviços",
+        description:
+          "Um endpoint, uma integração ou um job específico — backend pontual sem arquitetura desnecessária.",
+      },
+    ],
   },
   {
-    title: "Dashboards e painéis",
-    description:
-      "Interfaces para visualizar dados, acompanhar métricas e apoiar decisões do dia a dia.",
-  },
-  {
-    title: "Automações e integrações",
-    description:
-      "Conectamos ferramentas, APIs e fluxos para eliminar trabalho manual repetitivo.",
-  },
-  {
-    title: "Protótipos interativos",
-    description:
-      "Do conceito ao clique: protótipos navegáveis para alinhar time, cliente e investimento.",
-  },
-  {
-    title: "Auditoria de produto digital",
-    description:
-      "Análise focada de UX, performance e código — diagnóstico claro e prioridades de melhoria.",
-  },
-  {
-    title: "Ferramentas internas",
-    description:
-      "CRMs simples, gestão de leads, agendas e fluxos operacionais feitos para o seu processo.",
-  },
-  {
-    title: "Formulários e onboarding",
-    description:
-      "Cadastros, questionários, KYC leve e jornadas de entrada — fluxos claros que convertem e orientam.",
-  },
-  {
-    title: "Assistentes e chatbots",
-    description:
-      "Suporte automatizado, FAQ inteligente ou triagem de demandas com escopo definido e mensurável.",
-  },
-  {
-    title: "APIs e microsserviços",
-    description:
-      "Um endpoint, uma integração ou um job específico — backend pontual sem arquitetura desnecessária.",
+    label: "Qualidade e confiabilidade",
+    products: [
+      {
+        title: "Observabilidade",
+        description:
+          "Sentry para erros e performance em produção, Hotjar para gravações, mapas de calor e funis — além de logs, métricas e alertas, com setup e dashboards sob medida.",
+      },
+      {
+        title: "Testes automatizados",
+        description:
+          "Jest para testes unitários e de integração, Cypress para fluxos E2E nas jornadas críticas — suítes focadas e pipeline no CI para deploy com mais confiança.",
+      },
+    ],
   },
 ];
 
@@ -97,10 +123,10 @@ const comparison = {
     "Pressão por “mudar o mercado”",
     "Modelo pesado em equity e escala",
   ],
-  micro: [
-    "Foco em produto ou ferramenta enxuta",
-    "Entregas em ciclos curtos",
-    "Resolver uma dor concreta bem feito",
+  hdigital: [
+    "Foco em produto que funciona de verdade",
+    "Entregas em ciclos com marcos claros",
+    "Resolver uma dor concreta com excelência",
     "Projeto fechado, parceria ou produto próprio",
   ],
 };
@@ -108,58 +134,47 @@ const comparison = {
 export default function Home() {
   return (
     <div className="min-h-full bg-white text-neutral-900">
-      <header className="flex w-full items-center justify-between gap-6 border-b border-neutral-100 px-6 py-2 lg:px-12">
-        <a href="#" aria-label="H Digital — início">
-          <Image
-            src="/brand/logo.png"
-            alt="H Digital"
-            width={944}
-            height={531}
-            className="h-24 w-auto lg:h-32"
-            priority
-          />
-        </a>
-        <nav aria-label="Menu principal">
-          <ul className="flex items-center gap-6 text-sm font-medium uppercase tracking-[0.15em] text-neutral-700 sm:gap-10 sm:text-base">
-            {navItems.map((item) => (
-              <li key={item.href}>
-                <a
-                  href={item.href}
-                  className="transition-colors hover:text-accent"
-                >
-                  {item.label}
-                </a>
-              </li>
-            ))}
-          </ul>
-        </nav>
-      </header>
+      <SiteHeader />
 
       <main className="w-full">
         <section className="relative w-full">
-          <div className="relative aspect-[21/9] min-h-[280px] w-full sm:min-h-[360px] lg:min-h-[420px]">
+          <div className="relative min-h-[min(85vh,520px)] w-full sm:min-h-[400px] sm:aspect-[21/9] lg:min-h-[420px]">
             <Image
               src="/brand/hero.jpg"
               alt="Paisagem da Holanda com moinhos ao entardecer"
               fill
-              className="object-cover"
+              className="object-cover object-center"
               priority
               sizes="100vw"
             />
-            <div className="absolute inset-0 bg-gradient-to-r from-black/60 via-black/25 to-transparent" />
-            <div className="absolute inset-0 flex items-end px-6 pb-10 lg:px-12 lg:pb-16">
-              <div>
-                <p className="mb-2 text-xs font-medium uppercase tracking-[0.3em] text-white/80">
-                  Incubadora de microsoluções de tecnologia
+            <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-black/35 to-black/20 sm:bg-gradient-to-r sm:from-black/60 sm:via-black/25 sm:to-transparent" />
+            <div className="absolute inset-0 flex items-end px-4 pb-8 sm:px-6 sm:pb-10 lg:px-12 lg:pb-16">
+              <div className="w-full max-w-3xl">
+                <p className="mb-2 text-[0.65rem] font-medium uppercase tracking-[0.2em] text-white/80 sm:text-xs sm:tracking-[0.3em]">
+                  Incubadora de soluções digitais
                 </p>
-                <h1 className="max-w-3xl text-3xl font-semibold leading-tight text-white sm:text-4xl lg:text-5xl">
-                  Ferramentas digitais pequenas, úteis e prontas para usar.
+                <h1 className="text-2xl font-semibold leading-tight text-white sm:text-4xl lg:text-5xl">
+                  Tecnologia que sai do papel e funciona no mundo real.
                 </h1>
-                <p className="mt-4 max-w-2xl text-lg leading-relaxed text-white/90">
-                  Incubamos e construímos produtos tech enxutos — com escopo
-                  claro, entrega rápida e foco em resolver um problema de cada
-                  vez.
+                <p className="mt-3 max-w-2xl text-base leading-relaxed text-white/90 sm:mt-4 sm:text-lg">
+                  Incubamos e construímos produtos digitais com escopo claro,
+                  entrega previsível e foco total em gerar resultado — um
+                  problema resolvido de cada vez.
                 </p>
+                <div className="mt-6 flex flex-col gap-3 sm:mt-8 sm:flex-row sm:flex-wrap sm:gap-4">
+                  <a
+                    href="#contato"
+                    className="inline-flex w-full items-center justify-center bg-accent px-6 py-3.5 text-sm font-semibold uppercase tracking-[0.12em] text-white transition-opacity hover:opacity-90 sm:w-auto"
+                  >
+                    Falar conosco
+                  </a>
+                  <a
+                    href="#entregas"
+                    className="inline-flex w-full items-center justify-center border border-white/80 px-6 py-3.5 text-sm font-semibold uppercase tracking-[0.12em] text-white transition-colors hover:bg-white/10 sm:w-auto"
+                  >
+                    O que entregamos
+                  </a>
+                </div>
               </div>
             </div>
           </div>
@@ -167,49 +182,50 @@ export default function Home() {
 
         <section
           id="solucoes"
-          className="w-full scroll-mt-28 px-6 py-16 lg:px-12 lg:py-24"
+          className="w-full scroll-mt-32 px-4 py-12 sm:scroll-mt-36 sm:px-6 sm:py-16 lg:scroll-mt-40 lg:px-12 lg:py-24"
         >
           <div className="max-w-3xl">
             <p className="text-sm font-semibold uppercase tracking-[0.2em] text-accent">
               Soluções
             </p>
             <h2 className="mt-4 text-2xl font-semibold tracking-tight sm:text-3xl lg:text-4xl">
-              H Digital é uma incubadora de microsoluções de tecnologia.
+              Incubadora de tecnologia para quem precisa de resultado, não de
+              discurso.
             </h2>
-            <p className="mt-6 text-lg leading-8 text-neutral-600">
-              Não apostamos tudo em uma única startup nem em projetos sem fim.
-              Criamos e apoiamos{" "}
+            <p className="mt-6 text-base leading-8 text-neutral-600 sm:text-lg">
+              Não vendemos promessa de unicórnio nem projeto sem fim. Criamos{" "}
               <strong className="font-medium text-neutral-900">
-                soluções digitais sob medida, enxutas e executáveis
+                soluções digitais sob medida, com começo, meio e fim definidos
               </strong>{" "}
               — da ideia à operação, unindo estratégia, design e engenharia.
             </p>
           </div>
 
-          <div className="mt-16 rounded-2xl border border-neutral-200 bg-neutral-50 p-8 lg:p-10">
+          <div className="mt-12 rounded-2xl border border-neutral-200 bg-neutral-50 p-6 sm:mt-16 sm:p-8 lg:p-10">
             <h3 className="text-xl font-semibold sm:text-2xl">
-              O que é uma microsolução?
+              Nossa abordagem: escopo definido, impacto real
             </h3>
             <p className="mt-4 max-w-3xl text-lg leading-8 text-neutral-600">
-              É um produto ou ferramenta digital com escopo delimitado: resolve
-              uma necessidade concreta, pode ser lançada em semanas ou poucos
-              meses e evolui conforme o uso real — não conforme um deck de
-              investidores.
+              Cada entrega é um produto ou ferramenta digital com objetivo
+              claro: resolve uma necessidade concreta, pode ir ao ar em semanas
+              ou poucos meses e evolui com base no uso — não no palpite.
             </p>
             <p className="mt-4 text-neutral-600">
-              Pense em um MVP que valida uma hipótese, uma automação que poupa
-              horas de trabalho manual, um painel que organiza dados dispersos ou
-              um site que comunica e converte. Pequeno no tamanho, grande no
-              efeito.
+              Um MVP que valida antes de escalar. Uma automação que devolve
+              horas toda semana. Um painel que organiza decisões. Um site que
+              comunica e converte.{" "}
+              <strong className="font-medium text-neutral-900">
+                Foco no que importa, entregue com excelência.
+              </strong>
             </p>
           </div>
 
           <div className="mt-16">
             <h3 className="text-xl font-semibold sm:text-2xl">
-              Por que microsoluções?
+              Por que funciona para o seu negócio
             </h3>
             <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-              {whyMicro.map((item) => (
+              {whyFocused.map((item) => (
                 <div
                   key={item.title}
                   className="border-t-2 border-accent pt-4"
@@ -241,10 +257,10 @@ export default function Home() {
             </div>
             <div>
               <h3 className="text-lg font-semibold text-accent">
-                H Digital · microsoluções
+                H Digital
               </h3>
               <ul className="mt-4 space-y-3 text-neutral-700">
-                {comparison.micro.map((item) => (
+                {comparison.hdigital.map((item) => (
                   <li key={item} className="flex gap-3">
                     <span className="text-accent" aria-hidden>
                       +
@@ -262,7 +278,7 @@ export default function Home() {
                 O que desenvolvemos
               </h3>
               <ul className="mt-8 space-y-4 text-lg text-neutral-700">
-                {microsolutionExamples.map((item) => (
+                {solutionExamples.map((item) => (
                   <li key={item} className="flex gap-3">
                     <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-accent" />
                     {item}
@@ -279,8 +295,8 @@ export default function Home() {
                   <strong className="font-medium text-neutral-900">
                     Incubação
                   </strong>{" "}
-                  — desenvolvemos microsoluções próprias e de parceiros, do zero
-                  à primeira versão publicada.
+                  — desenvolvemos produtos digitais próprios e de parceiros, do
+                  zero à primeira versão publicada.
                 </li>
                 <li>
                   <strong className="font-medium text-neutral-900">
@@ -302,42 +318,58 @@ export default function Home() {
         </section>
 
         <section
-          id="projetos"
-          className="w-full scroll-mt-28 border-t border-neutral-100 bg-neutral-50 px-6 py-16 lg:px-12 lg:py-24"
+          id="entregas"
+          className="w-full scroll-mt-32 border-t border-neutral-100 bg-neutral-50 px-4 py-12 sm:scroll-mt-36 sm:px-6 sm:py-16 lg:scroll-mt-40 lg:px-12 lg:py-24"
         >
           <p className="text-sm font-semibold uppercase tracking-[0.2em] text-accent">
-            Projetos
+            O que entregamos
           </p>
           <h2 className="mt-4 text-2xl font-semibold tracking-tight sm:text-3xl">
-            Onde as microsoluções ganham vida.
+            Soluções digitais que incubamos e construímos para você.
           </h2>
-          <p className="mt-6 max-w-3xl text-lg leading-8 text-neutral-600">
-            Aqui incubamos produtos digitais em diferentes estágios: ideias em
-            validação, MVPs em teste com usuários reais e ferramentas já em
-            operação que precisam evoluir. Cada projeto mantém escopo claro —
-            sem virar um monólito antes da hora.
-          </p>
-          <p className="mt-4 max-w-3xl text-lg leading-8 text-neutral-600">
-            Estas são microsoluções que incubamos e entregamos — cada uma com
-            escopo fechado e objetivo claro. Cases em andamento entram aqui
-            conforme forem publicados.
+          <p className="mt-6 max-w-3xl text-base leading-8 text-neutral-600 sm:text-lg">
+            Cada entrega tem escopo fechado e objetivo claro — da validação de
+            uma ideia à ferramenta em operação. O investimento acompanha o
+            desafio:{" "}
+            <strong className="font-medium text-neutral-900">
+              sob consulta, com proposta personalizada por projeto
+            </strong>
+            , sem pacote genérico que não serve ninguém.
           </p>
 
-          <ul className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-            {products.map((product) => (
-              <li
-                key={product.title}
-                className="flex flex-col border border-neutral-200 bg-white p-6 lg:p-8"
-              >
-                <h3 className="text-lg font-semibold text-neutral-900">
-                  {product.title}
-                </h3>
-                <p className="mt-3 flex-1 text-sm leading-7 text-neutral-600">
-                  {product.description}
-                </p>
-              </li>
-            ))}
-          </ul>
+          <div className="mt-10 max-w-3xl rounded-2xl border border-dashed border-neutral-300 bg-white p-6 lg:p-8">
+            <h3 className="text-lg font-semibold text-neutral-900">
+              Cases em destaque
+            </h3>
+            <p className="mt-3 leading-7 text-neutral-600">
+              Estamos incubando as primeiras soluções com parceiros. Assim que
+              houver autorização para divulgar, publicamos aqui resultados reais
+              — problema, solução e impacto — em vez de só listar serviços.
+            </p>
+          </div>
+
+          {productCategories.map((category, index) => (
+            <div key={category.label} className={index === 0 ? "mt-12" : "mt-16"}>
+              <h3 className="text-lg font-semibold text-neutral-900">
+                {category.label}
+              </h3>
+              <ul className="mt-6 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+                {category.products.map((product) => (
+                  <li
+                    key={product.title}
+                    className="flex flex-col border border-neutral-200 bg-white p-6 lg:p-8"
+                  >
+                    <h4 className="text-lg font-semibold text-neutral-900">
+                      {product.title}
+                    </h4>
+                    <p className="mt-3 flex-1 text-sm leading-7 text-neutral-600">
+                      {product.description}
+                    </p>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ))}
 
           <p className="mt-12 max-w-3xl text-neutral-600">
             Tem outra dor em mente?{" "}
@@ -347,15 +379,15 @@ export default function Home() {
             >
               Fale conosco
             </a>{" "}
-            — microsolução é exatamente isso: o tamanho certo para o problema
-            certo.
+            — montamos a entrega certa para o seu contexto, com escopo que você
+            entende antes de assinar.
           </p>
         </section>
       </main>
 
       <footer
         id="contato"
-        className="w-full scroll-mt-28 border-t border-neutral-100 px-6 py-10 lg:px-12"
+        className="w-full scroll-mt-32 border-t border-neutral-100 px-4 py-10 sm:scroll-mt-36 sm:px-6 lg:scroll-mt-40 lg:px-12"
       >
         <div className="flex w-full flex-col gap-8 sm:flex-row sm:items-start sm:justify-between">
           <div className="max-w-md">
@@ -364,13 +396,17 @@ export default function Home() {
             </p>
             <p className="mt-3 text-neutral-600">
               Tem uma ideia, um processo manual ou um produto para validar?
-              Vamos conversar sobre a microsolução certa para o seu contexto.
+              Conte o contexto — respondemos com a solução que faz sentido e um
+              escopo inicial para conversar, sem compromisso.
+            </p>
+            <p className="mt-4 text-sm text-neutral-500">
+              Investimento sob consulta · escopo fechado por entrega
             </p>
           </div>
-          <div className="text-sm text-neutral-500">
+          <div className="text-sm text-neutral-500 sm:text-right">
             <a
               href="mailto:hdgtldevelopment@gmail.com"
-              className="text-lg font-medium text-neutral-800 transition-colors hover:text-accent"
+              className="break-all text-base font-medium text-neutral-800 transition-colors hover:text-accent sm:text-lg"
             >
               hdgtldevelopment@gmail.com
             </a>

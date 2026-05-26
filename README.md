@@ -1,6 +1,6 @@
 # H Digital
 
-Incubadora de **microsoluções de tecnologia** — produtos e ferramentas digitais enxutas, com escopo definido, entrega rápida e foco em resolver problemas concretos.
+Incubadora de **soluções digitais** — produtos e ferramentas com escopo definido, entrega previsível e foco em resultado real para o negócio.
 
 **Site:** [h-digital](https://github.com/fhconte/h-digital) · desenvolvimento local em [http://localhost:3000](http://localhost:3000)
 
