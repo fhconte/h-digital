@@ -3,12 +3,10 @@
 import Image from "next/image";
 import { useState } from "react";
 import { BRAND_NAME } from "@/lib/brand";
-import { CONTACT_MAILTO } from "@/lib/contact";
-
 const navItems = [
   { label: "Soluções", href: "#solucoes" },
   { label: "Entregas", href: "#entregas" },
-  { label: "Contato", href: CONTACT_MAILTO },
+  { label: "Contato", href: "#contato" },
 ];
 
 export function SiteHeader() {

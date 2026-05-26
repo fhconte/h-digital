@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { SiteHeader } from "@/components/site-header";
 import { BRAND_NAME } from "@/lib/brand";
-import { CONTACT_EMAIL, CONTACT_MAILTO } from "@/lib/contact";
+import { CONTACT_EMAIL, contactMailto } from "@/lib/contact";
 
 const solutionExamples = [
   "Design systems, sites e protótipos interativos",
@@ -165,7 +165,7 @@ export default function Home() {
                 </p>
                 <div className="mt-6 flex flex-col gap-3 sm:mt-8 sm:flex-row sm:flex-wrap sm:gap-4">
                   <a
-                    href={CONTACT_MAILTO}
+                    href={contactMailto("inicio")}
                     className="inline-flex w-full items-center justify-center bg-accent px-6 py-3.5 text-sm font-semibold uppercase tracking-[0.12em] text-white transition-opacity hover:opacity-90 sm:w-auto"
                   >
                     Falar conosco
@@ -376,7 +376,7 @@ export default function Home() {
           <p className="mt-12 max-w-3xl text-neutral-600">
             Tem outra dor em mente?{" "}
             <a
-              href={CONTACT_MAILTO}
+              href={contactMailto("entregas")}
               className="font-medium text-accent underline-offset-4 hover:underline"
             >
               Fale conosco
@@ -397,9 +397,15 @@ export default function Home() {
               Contato
             </p>
             <p className="mt-3 text-neutral-600">
-              Tem uma ideia, um processo manual ou um produto para validar?
-              Conte o contexto — respondemos com a solução que faz sentido e um
-              escopo inicial para conversar, sem compromisso.
+              Tem uma ideia, um processo manual ou um produto para validar?{" "}
+              <a
+                href={contactMailto("rodape")}
+                className="text-accent underline-offset-4 hover:underline"
+              >
+                Conte o contexto
+              </a>{" "}
+              — respondemos com a solução que faz sentido e um escopo inicial
+              para conversar, sem compromisso.
             </p>
             <p className="mt-4 text-sm text-neutral-500">
               Investimento sob consulta · escopo fechado por entrega
@@ -407,7 +413,7 @@ export default function Home() {
           </div>
           <div className="text-sm text-neutral-500 sm:text-right">
             <a
-              href={CONTACT_MAILTO}
+              href={contactMailto("rodape")}
               className="break-all text-base font-medium text-neutral-800 transition-colors hover:text-accent sm:text-lg"
             >
               {CONTACT_EMAIL}
