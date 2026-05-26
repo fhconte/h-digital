@@ -15,11 +15,11 @@ export function SiteHeader() {
   const closeMenu = () => setMenuOpen(false);
 
   return (
-    <header className="sticky top-0 z-50 w-full border-b border-neutral-100 bg-white/95 backdrop-blur-sm">
-      <div className="flex items-center justify-between gap-3 px-4 py-2 sm:px-6 lg:px-12 lg:py-3">
+    <header className="sticky top-0 z-50 w-full border-b border-neutral-100 bg-white">
+      <div className="flex items-center justify-between gap-4 px-6 lg:px-12">
         <a
           href="#"
-          className="shrink-0"
+          className="block shrink-0 leading-none"
           aria-label="H Digital — início"
           onClick={closeMenu}
         >
@@ -28,7 +28,7 @@ export function SiteHeader() {
             alt="H Digital"
             width={944}
             height={531}
-            className="h-28 w-auto sm:h-32 md:h-36 lg:h-40 xl:h-44"
+            className="block h-28 w-auto sm:h-32 md:h-36 lg:h-40 xl:h-44"
             priority
             sizes="(max-width: 640px) 200px, (max-width: 1024px) 260px, 320px"
           />
@@ -91,7 +91,7 @@ export function SiteHeader() {
         className={`border-t border-neutral-100 bg-white lg:hidden ${menuOpen ? "block" : "hidden"}`}
         aria-label="Menu mobile"
       >
-        <ul className="flex flex-col px-4 py-2 sm:px-6">
+        <ul className="flex flex-col px-6 lg:px-12">
           {navItems.map((item) => (
             <li key={item.href}>
               <a
