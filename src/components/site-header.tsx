@@ -2,11 +2,13 @@
 
 import Image from "next/image";
 import { useState } from "react";
+import { BRAND_NAME } from "@/lib/brand";
+import { CONTACT_MAILTO } from "@/lib/contact";
 
 const navItems = [
   { label: "Soluções", href: "#solucoes" },
   { label: "Entregas", href: "#entregas" },
-  { label: "Contato", href: "#contato" },
+  { label: "Contato", href: CONTACT_MAILTO },
 ];
 
 export function SiteHeader() {
@@ -20,12 +22,12 @@ export function SiteHeader() {
         <a
           href="#"
           className="block shrink-0 leading-none"
-          aria-label="H Digital — início"
+          aria-label={`${BRAND_NAME} — início`}
           onClick={closeMenu}
         >
           <Image
             src="/brand/logo.png"
-            alt="H Digital"
+            alt={BRAND_NAME}
             width={944}
             height={531}
             className="block h-28 w-auto sm:h-32 md:h-36 lg:h-40 xl:h-44"

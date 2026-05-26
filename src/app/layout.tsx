@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Geist } from "next/font/google";
+import { BRAND_NAME } from "@/lib/brand";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -8,7 +9,7 @@ const geistSans = Geist({
 });
 
 export const metadata: Metadata = {
-  title: "H Digital | Incubadora de soluções digitais",
+  title: `${BRAND_NAME} | Incubadora de soluções digitais`,
   description:
     "Incubadora de soluções digitais com escopo definido e entrega previsível — MVPs, automações, dashboards e produtos sob medida que geram resultado real.",
 };
