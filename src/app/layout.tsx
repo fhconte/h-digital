@@ -13,9 +13,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "H Digital | Incubadora de projetos de tecnologia",
+  title: "H Digital | Incubadora de microsoluções de tecnologia",
   description:
-    "H Digital é uma incubadora de projetos de tecnologia. Apoiamos ideias digitais da concepção à execução.",
+    "Incubadora de microsoluções de tecnologia: produtos digitais enxutos, com escopo claro e entrega rápida — MVPs, automações, dashboards e ferramentas sob medida.",
 };
 
 export default function RootLayout({

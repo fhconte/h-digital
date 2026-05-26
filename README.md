@@ -1,6 +1,6 @@
 # H Digital
 
-Incubadora de projetos de tecnologia. Apoiamos empreendedores e equipes na criação, validação e escala de produtos digitais.
+Incubadora de **microsoluções de tecnologia** — produtos e ferramentas digitais enxutas, com escopo definido, entrega rápida e foco em resolver problemas concretos.
 
 **Site:** [h-digital](https://github.com/fhconte/h-digital) · desenvolvimento local em [http://localhost:3000](http://localhost:3000)
 
