@@ -2,7 +2,7 @@
 
 Incubadora de **soluções digitais** — produtos e ferramentas com escopo definido, entrega previsível e foco em resultado real para o negócio.
 
-**Site:** [h-digital](https://github.com/fhconte/h-digital) · desenvolvimento local em [http://localhost:3000](http://localhost:3000)
+**Site:** [holanda-digital](https://holandadigital.vercel.app/) · desenvolvimento local em [http://localhost:3000](http://localhost:3000)
 
 ## Stack
 
