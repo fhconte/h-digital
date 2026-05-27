@@ -5,7 +5,7 @@ export const CONTACT_EMAIL = "hdgtldevelopment@gmail.com";
 export type ContactSource = "inicio" | "entregas" | "rodape";
 
 const SUBJECTS: Record<ContactSource, string> = {
-  inicio: "Contato — início",
+  inicio: "Inicio",
   entregas: "Entregas",
   rodape: "Contato",
 };

@@ -4,11 +4,19 @@ import { BRAND_NAME } from "@/lib/brand";
 import { CONTACT_EMAIL, contactMailto } from "@/lib/contact";
 
 const solutionExamples = [
+  "Frontends em JavaScript, React e Next.js com SSR",
+  "APIs, automações e serviços em Node.js",
   "Design systems, sites e protótipos interativos",
   "MVPs, validação e auditoria de produto",
-  "Dashboards e ferramentas internas",
-  "Automações, APIs, formulários e assistentes",
-  "Observabilidade, testes automatizados e qualidade em produção",
+  "Dashboards, ferramentas internas e qualidade em produção",
+];
+
+const techStack = [
+  "JavaScript",
+  "React",
+  "Next.js",
+  "SSR",
+  "Node.js",
 ];
 
 const whyFocused = [
@@ -47,7 +55,7 @@ const productCategories = [
       {
         title: "Landing pages e sites",
         description:
-          "Páginas rápidas, objetivas e com mensagem clara — institucional, campanha ou lançamento.",
+          "Páginas rápidas em Next.js — institucional, campanha ou lançamento, com SSR ou SSG quando o projeto pede performance e SEO.",
       },
       {
         title: "Protótipos interativos",
@@ -82,8 +90,33 @@ const productCategories = [
     ],
   },
   {
-    label: "Integração e backend",
+    label: "Frontend e plataforma web",
     products: [
+      {
+        title: "Frontends React e Next.js",
+        description:
+          "Interfaces em JavaScript com componentes React — rotas, estado e integração com APIs, no padrão que o mercado já adota e mantém.",
+      },
+      {
+        title: "Server-side rendering (SSR)",
+        description:
+          "Renderização no servidor com Next.js — primeiro carregamento rápido, conteúdo dinâmico e melhor base para SEO em páginas que precisam ser encontradas.",
+      },
+      {
+        title: "Dashboards e apps web",
+        description:
+          "Painéis, fluxos internos e produtos SaaS no browser — experiência responsiva, tipada com TypeScript quando o projeto exige mais rigor.",
+      },
+    ],
+  },
+  {
+    label: "Backend e integrações",
+    products: [
+      {
+        title: "Soluções em Node.js",
+        description:
+          "APIs REST, webhooks, filas e jobs no mesmo ecossistema JavaScript do frontend — menos atrito entre times e deploy mais coerente.",
+      },
       {
         title: "Automações e integrações",
         description:
@@ -97,7 +130,7 @@ const productCategories = [
       {
         title: "APIs e microsserviços",
         description:
-          "Um endpoint, uma integração ou um job específico — backend pontual sem arquitetura desnecessária.",
+          "Endpoints e serviços pontuais em Node.js — integração ou job específico, sem arquitetura desnecessária.",
       },
     ],
   },
@@ -159,9 +192,9 @@ export default function Home() {
                   Tecnologia que sai do papel e funciona no mundo real.
                 </h1>
                 <p className="mt-3 max-w-2xl text-base leading-relaxed text-white/90 sm:mt-4 sm:text-lg">
-                  Incubamos e construímos produtos digitais com escopo claro,
-                  entrega previsível e foco total em gerar resultado — um
-                  problema resolvido de cada vez.
+                  Frontends em React e Next.js, server-side rendering e
+                  soluções em Node.js — com escopo claro, entrega previsível e
+                  foco em resultado no mundo real.
                 </p>
                 <div className="mt-6 flex flex-col gap-3 sm:mt-8 sm:flex-row sm:flex-wrap sm:gap-4">
                   <a
@@ -199,8 +232,29 @@ export default function Home() {
               <strong className="font-medium text-neutral-900">
                 soluções digitais sob medida, com começo, meio e fim definidos
               </strong>{" "}
-              — da ideia à operação, unindo estratégia, design e engenharia.
+              — da ideia à operação, com JavaScript no frontend (React, Next.js,
+              SSR) e Node.js no backend quando o produto precisa.
             </p>
+          </div>
+
+          <div className="mt-10 max-w-3xl">
+            <h3 className="text-lg font-semibold text-neutral-900">
+              Stack principal
+            </h3>
+            <p className="mt-3 text-neutral-600">
+              Ecossistema JavaScript de ponta a ponta — do browser ao servidor —
+              para entregar rápido sem sacrificar qualidade técnica.
+            </p>
+            <ul className="mt-4 flex flex-wrap gap-2">
+              {techStack.map((tech) => (
+                <li
+                  key={tech}
+                  className="border border-neutral-200 bg-white px-3 py-1.5 text-sm font-medium text-neutral-700"
+                >
+                  {tech}
+                </li>
+              ))}
+            </ul>
           </div>
 
           <div className="mt-12 rounded-2xl border border-neutral-200 bg-neutral-50 p-6 sm:mt-16 sm:p-8 lg:p-10">
@@ -213,9 +267,9 @@ export default function Home() {
               ou poucos meses e evolui com base no uso — não no palpite.
             </p>
             <p className="mt-4 text-neutral-600">
-              Um MVP que valida antes de escalar. Uma automação que devolve
-              horas toda semana. Um painel que organiza decisões. Um site que
-              comunica e converte.{" "}
+              Um app Next.js com SSR que ranqueia e carrega rápido. Uma API em
+              Node.js que integra seus sistemas. Um MVP que valida antes de
+              escalar. Um painel que organiza decisões.{" "}
               <strong className="font-medium text-neutral-900">
                 Foco no que importa, entregue com excelência.
               </strong>
@@ -330,13 +384,22 @@ export default function Home() {
             Soluções digitais que incubamos e construímos para você.
           </h2>
           <p className="mt-6 max-w-3xl text-base leading-8 text-neutral-600 sm:text-lg">
-            Cada entrega tem escopo fechado e objetivo claro — da validação de
-            uma ideia à ferramenta em operação. O investimento acompanha o
+            Do frontend em React e Next.js — com SSR quando precisa — ao
+            backend em Node.js, cada entrega tem escopo fechado e objetivo claro.
+            O investimento acompanha o
             desafio:{" "}
             <strong className="font-medium text-neutral-900">
               sob consulta, com proposta personalizada por projeto
             </strong>
             , sem pacote genérico que não serve ninguém.
+          </p>
+          <p className="mt-4 max-w-3xl text-base leading-8 text-neutral-600">
+            Você paga apenas pelo{" "}
+            <strong className="font-medium text-neutral-900">
+              desenvolvimento
+            </strong>
+            . Domínio e hospedagem ficam com você — contratados e pagos
+            diretamente às empresas de registro e hospedagem que escolher.
           </p>
 
           <div className="mt-10 max-w-3xl rounded-2xl border border-dashed border-neutral-300 bg-white p-6 lg:p-8">
@@ -408,7 +471,8 @@ export default function Home() {
               para conversar, sem compromisso.
             </p>
             <p className="mt-4 text-sm text-neutral-500">
-              Investimento sob consulta · escopo fechado por entrega
+              Cobramos só o desenvolvimento · domínio e hospedagem por sua conta
+              · escopo fechado por entrega
             </p>
           </div>
           <div className="text-sm text-neutral-500 sm:text-right">
