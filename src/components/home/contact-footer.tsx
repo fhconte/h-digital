@@ -13,19 +13,18 @@ export function ContactFooter() {
             Contato
           </p>
           <p className="mt-3 text-neutral-600">
-            Tem uma ideia, um processo manual ou um produto para validar?{" "}
+            Quer orçamento ou tirar dúvida?{" "}
             <a
               href={contactMailto("contato")}
               className="text-accent underline-offset-4 hover:underline"
             >
-              Conte o contexto
+              Escreve para a gente
             </a>{" "}
-            — respondemos com a solução que faz sentido e um escopo inicial
-            para conversar, sem compromisso.
+            contando o que precisa. Respondemos com uma proposta inicial.
           </p>
           <p className="mt-4 text-sm text-neutral-500">
-            Cobramos só o desenvolvimento · domínio e hospedagem por sua conta ·
-            escopo fechado por entrega
+            Só desenvolvimento. Domínio e hospedagem por sua conta. Escopo
+            fechado por entrega.
           </p>
         </div>
         <div className="text-sm text-neutral-500 sm:text-right">

@@ -4,7 +4,7 @@ export const solutionExamples = [
   "Frontends em Vue, React e Next.js com TypeScript",
   "APIs e automações em Node.js",
   "Sites, dashboards e ferramentas internas",
-  "Testes com Jest e Cypress, observabilidade com Sentry e Hotjar",
+  "Deploy na Vercel, CI com GitHub Actions, testes e monitoramento",
 ];
 
 export const techStack = [
@@ -15,51 +15,53 @@ export const techStack = [
   "Node.js",
 ];
 
+export const toolingStack = ["Vercel", "GitHub Actions"];
+
 export const whyFocused: FocusPoint[] = [
   {
     title: "Escopo definido",
-    text: "Você sabe o que será entregue antes de começar — sem surpresas, sem projeto que cresce sem controle.",
+    text: "Antes de começar, você sabe o que entra na entrega. Sem escopo que cresce no meio do projeto.",
   },
   {
-    title: "Resultado no prazo",
-    text: "Ciclos curtos e objetivos. Do conceito ao uso real, com marcos claros em vez de promessas distantes.",
+    title: "Prazo combinado",
+    text: "Marcos claros do início ao fim. Menos reunião vaga, mais coisa pronta para usar.",
   },
   {
-    title: "Investimento previsível",
-    text: "Cada entrega tem proposta fechada. Você investe no que resolve a dor, não em promessa vaga.",
+    title: "Orçamento fechado",
+    text: "Proposta por entrega. Você paga o que foi combinado, sem surpresa no meio do caminho.",
   },
   {
-    title: "Impacto mensurável",
-    text: "Ferramentas que as pessoas usam no dia a dia — com feedback e evolução baseada em uso real.",
+    title: "Uso de verdade",
+    text: "Prioridade em ferramenta que o time usa no dia a dia, não só apresentação.",
   },
 ];
 
 export const comparison: Comparison = {
   traditional: [
-    "Escopo aberto que muda no meio do caminho",
-    "Prazos longos sem marcos claros",
-    "Stack escolhida por moda, não por necessidade",
-    "Difícil saber o que foi entregue de fato",
+    "Escopo que muda no meio do projeto",
+    "Prazo longo sem entrega intermediária",
+    "Tecnologia escolhida por moda",
+    "Difícil saber o que foi entregue",
   ],
   hdigital: [
     "Escopo fechado por entrega",
-    "Ciclos curtos com resultado visível",
-    "Vue, React, Next.js e Node.js com TypeScript",
-    "Código e produto que evoluem depois do lançamento",
+    "Entregas em ciclos curtos",
+    "Vue, React, Next.js e Node com TypeScript",
+    "Produto que dá para evoluir depois",
   ],
 };
 
 export const howWeWork = [
   {
     title: "Incubação",
-    text: "desenvolvemos produtos digitais próprios e de parceiros, do zero à primeira versão publicada.",
+    text: "Produtos nossos e de parceiros, do zero até a primeira versão no ar.",
   },
   {
     title: "Projetos sob medida",
-    text: "para empresas e equipes que precisam de tech sem montar um departamento inteiro.",
+    text: "Para quem precisa de software sem montar time interno de dev.",
   },
   {
-    title: "Evolução contínua",
-    text: "depois do lançamento, iteramos com base em uso, feedback e métricas reais.",
+    title: "Manutenção",
+    text: "Depois do lançamento, ajustes e melhorias conforme o uso.",
   },
 ];

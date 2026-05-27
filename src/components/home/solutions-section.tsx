@@ -4,6 +4,7 @@ import {
   howWeWork,
   solutionExamples,
   techStack,
+  toolingStack,
   whyFocused,
 } from "@/content/home";
 
@@ -18,23 +19,22 @@ export function SolutionsSection() {
           Soluções
         </p>
         <h2 className="mt-4 text-2xl font-semibold tracking-tight sm:text-3xl lg:text-4xl">
-          Desenvolvimento web com a stack que dominamos.
+          Trabalhamos com o que conhecemos bem.
         </h2>
         <p className="mt-6 text-base leading-8 text-neutral-600 sm:text-lg">
-          Criamos{" "}
+          Fazemos sites, painéis e APIs com{" "}
           <strong className="font-medium text-neutral-900">
-            soluções digitais sob medida, com começo, meio e fim definidos
-          </strong>{" "}
-          — com TypeScript no frontend (Vue, React, Next.js) e Node.js no
-          backend quando o produto precisa.
+            TypeScript, Vue, React, Next.js e Node.js
+          </strong>
+          . Cada projeto tem escopo e prazo definidos na proposta.
         </p>
       </div>
 
       <div className="mt-10 max-w-3xl">
         <h3 className="text-lg font-semibold text-neutral-900">Stack principal</h3>
         <p className="mt-3 text-neutral-600">
-          TypeScript em todo o fluxo — do componente Vue ou React ao endpoint em
-          Node.js — com tipagem e manutenção em mente.
+          Do componente no browser até a API no servidor. Código no GitHub,
+          pipeline no GitHub Actions e site ou app publicado na Vercel.
         </p>
         <ul className="mt-4 flex flex-wrap gap-2">
           {techStack.map((tech) => (
@@ -46,31 +46,36 @@ export function SolutionsSection() {
             </li>
           ))}
         </ul>
+        <p className="mt-6 text-sm font-medium text-neutral-700">
+          Publicação e CI
+        </p>
+        <ul className="mt-2 flex flex-wrap gap-2">
+          {toolingStack.map((tool) => (
+            <li
+              key={tool}
+              className="border border-neutral-200 bg-neutral-50 px-3 py-1.5 text-sm font-medium text-neutral-700"
+            >
+              {tool}
+            </li>
+          ))}
+        </ul>
       </div>
 
       <div className="mt-12 rounded-2xl border border-neutral-200 bg-neutral-50 p-6 sm:mt-16 sm:p-8 lg:p-10">
-        <h3 className="text-xl font-semibold sm:text-2xl">
-          Nossa abordagem: escopo definido, impacto real
-        </h3>
+        <h3 className="text-xl font-semibold sm:text-2xl">Como trabalhamos</h3>
         <p className="mt-4 max-w-3xl text-lg leading-8 text-neutral-600">
-          Cada entrega é um produto ou ferramenta digital com objetivo claro:
-          resolve uma necessidade concreta, pode ir ao ar em semanas ou poucos
-          meses e evolui com base no uso — não no palpite.
+          Cada job tem um objetivo claro: site, painel, integração ou API. Prazo
+          e entregas combinados na proposta. Repositório no GitHub, CI no
+          GitHub Actions e publicação na Vercel quando for projeto web.
         </p>
         <p className="mt-4 text-neutral-600">
-          Um painel em Vue para o time operar. Um site em Next.js para o
-          negócio comunicar e converter. Uma API em Node.js que integra o que
-          já existe.{" "}
-          <strong className="font-medium text-neutral-900">
-            Foco no que importa, entregue com excelência.
-          </strong>
+          Exemplos do que já fazemos: painel em Vue, site em Next.js, backend
+          em Node para ligar sistemas que você já usa.
         </p>
       </div>
 
       <div className="mt-16">
-        <h3 className="text-xl font-semibold sm:text-2xl">
-          Por que funciona para o seu negócio
-        </h3>
+        <h3 className="text-xl font-semibold sm:text-2xl">Por que contratar</h3>
         <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
           {whyFocused.map((item) => (
             <div key={item.title} className="border-t-2 border-accent pt-4">
@@ -92,7 +97,7 @@ export function SolutionsSection() {
             {comparison.traditional.map((item) => (
               <li key={item} className="flex gap-3">
                 <span className="text-neutral-300" aria-hidden>
-                  —
+                  ×
                 </span>
                 {item}
               </li>
@@ -133,8 +138,8 @@ export function SolutionsSection() {
               <li key={item.title}>
                 <strong className="font-medium text-neutral-900">
                   {item.title}
-                </strong>{" "}
-                — {item.text}
+                </strong>
+                : {item.text}
               </li>
             ))}
           </ul>

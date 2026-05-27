@@ -20,7 +20,7 @@ export function SiteHeader() {
         <a
           href="#"
           className="block shrink-0 leading-none"
-          aria-label={`${BRAND_NAME} — início`}
+          aria-label={`${BRAND_NAME}, início`}
           onClick={closeMenu}
         >
           <Image

@@ -11,30 +11,27 @@ export function DeliveriesSection() {
         O que entregamos
       </p>
       <h2 className="mt-4 text-2xl font-semibold tracking-tight sm:text-3xl">
-        Soluções digitais que incubamos e construímos para você.
+        O que fazemos no dia a dia.
       </h2>
       <p className="mt-6 max-w-3xl text-base leading-8 text-neutral-600 sm:text-lg">
-        Vue, React, Next.js e Node.js com TypeScript — cada entrega tem escopo
-        fechado e objetivo claro. O investimento
-        acompanha o desafio:{" "}
+        Vue, React, Next.js e Node com TypeScript. Cada projeto com escopo
+        fechado. Valor{" "}
         <strong className="font-medium text-neutral-900">
-          sob consulta, com proposta personalizada por projeto
+          sob consulta
         </strong>
-        , sem pacote genérico que não serve ninguém.
+        , com proposta escrita antes de começar.
       </p>
       <p className="mt-4 max-w-3xl text-base leading-8 text-neutral-600">
-        Você paga apenas pelo{" "}
-        <strong className="font-medium text-neutral-900">desenvolvimento</strong>
-        . Domínio e hospedagem ficam com você — contratados e pagos diretamente
-        às empresas de registro e hospedagem que escolher.
+        Cobramos só o desenvolvimento. Para sites e apps Next.js, configuramos
+        deploy na Vercel na sua conta. Domínio e plano da Vercel você paga
+        direto ao provedor.
       </p>
 
       <div className="mt-10 max-w-3xl rounded-2xl border border-dashed border-neutral-300 bg-white p-6 lg:p-8">
-        <h3 className="text-lg font-semibold text-neutral-900">Cases em destaque</h3>
+        <h3 className="text-lg font-semibold text-neutral-900">Cases</h3>
         <p className="mt-3 leading-7 text-neutral-600">
-          Estamos incubando as primeiras soluções com parceiros. Assim que houver
-          autorização para divulgar, publicamos aqui resultados reais — problema,
-          solução e impacto — em vez de só listar serviços.
+          Em breve publicamos trabalhos com autorização do cliente. Por enquanto
+          a lista abaixo mostra o tipo de entrega que aceitamos.
         </p>
       </div>
 
@@ -62,15 +59,14 @@ export function DeliveriesSection() {
       ))}
 
       <p className="mt-12 max-w-3xl text-neutral-600">
-        Tem outra dor em mente?{" "}
+        Precisa de outra coisa?{" "}
         <a
           href={contactMailto("entregas")}
           className="font-medium text-accent underline-offset-4 hover:underline"
         >
-          Fale conosco
+          Manda um e-mail
         </a>{" "}
-        — montamos a entrega certa para o seu contexto, com escopo que você
-        entende antes de assinar.
+        com o que você precisa. Respondemos com escopo e prazo para avaliar.
       </p>
     </section>
   );

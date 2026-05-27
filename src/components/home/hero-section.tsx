@@ -20,11 +20,11 @@ export function HeroSection() {
               Incubadora de soluções digitais
             </p>
             <h1 className="text-2xl font-semibold leading-tight text-white sm:text-4xl lg:text-5xl">
-              Tecnologia que sai do papel e funciona no mundo real.
+              Desenvolvimento web com Vue, React, Next.js e Node.
             </h1>
             <p className="mt-3 max-w-2xl text-base leading-relaxed text-white/90 sm:mt-4 sm:text-lg">
-              Vue, React, Next.js e Node.js com TypeScript — escopo claro,
-              entrega previsível e foco no que funciona em produção.
+              TypeScript no frontend e no backend. Escopo fechado e prazo
+              combinado antes de começar.
             </p>
             <div className="mt-6 flex flex-col gap-3 sm:mt-8 sm:flex-row sm:flex-wrap sm:gap-4">
               <a

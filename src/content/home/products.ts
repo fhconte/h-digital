@@ -7,17 +7,17 @@ export const productCategories: ProductCategory[] = [
       {
         title: "Frontends em Vue e React",
         description:
-          "Interfaces com TypeScript — componentes, estado e integração com APIs no stack que o projeto pedir.",
+          "Telas em TypeScript: componentes, estado e chamadas de API, no framework que o projeto usar.",
       },
       {
         title: "Sites e apps em Next.js",
         description:
-          "Páginas e aplicações em Next.js com TypeScript — institucional, produto ou ferramenta web com performance e SEO em mente.",
+          "Sites institucionais, landing pages e apps em Next.js com TypeScript. Deploy configurado na Vercel (conta do cliente).",
       },
       {
         title: "Dashboards e ferramentas internas",
         description:
-          "Painéis, CRMs enxutos, gestão de leads e fluxos operacionais feitos para o processo do cliente.",
+          "Painéis, CRMs simples, gestão de leads e rotinas do dia a dia do seu time.",
       },
     ],
   },
@@ -27,12 +27,12 @@ export const productCategories: ProductCategory[] = [
       {
         title: "APIs e backend em Node.js",
         description:
-          "REST, webhooks e jobs em TypeScript no servidor — mesmo ecossistema do frontend quando faz sentido.",
+          "REST, webhooks e rotinas em TypeScript no servidor, alinhado ao frontend quando fizer sentido.",
       },
       {
         title: "Automações e integrações",
         description:
-          "Conectar ferramentas, APIs e fluxos para eliminar trabalho manual repetitivo.",
+          "Ligar sistemas, APIs e fluxos para cortar trabalho manual repetitivo.",
       },
     ],
   },
@@ -42,12 +42,12 @@ export const productCategories: ProductCategory[] = [
       {
         title: "Testes automatizados",
         description:
-          "Jest para unitário e integração, Cypress para E2E nas jornadas críticas — com pipeline no CI.",
+          "Jest e Cypress nos fluxos importantes. GitHub Actions roda os testes antes de publicar na Vercel.",
       },
       {
         title: "Observabilidade",
         description:
-          "Sentry, Hotjar, logs e alertas — setup para enxergar erros, uso e comportamento em produção.",
+          "Configuração de Sentry, Hotjar, logs e alertas para ver erro e uso em produção.",
       },
     ],
   },
