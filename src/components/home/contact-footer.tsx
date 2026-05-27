@@ -15,7 +15,7 @@ export function ContactFooter() {
           <p className="mt-3 text-neutral-600">
             Tem uma ideia, um processo manual ou um produto para validar?{" "}
             <a
-              href={contactMailto("rodape")}
+              href={contactMailto("contato")}
               className="text-accent underline-offset-4 hover:underline"
             >
               Conte o contexto
@@ -30,7 +30,7 @@ export function ContactFooter() {
         </div>
         <div className="text-sm text-neutral-500 sm:text-right">
           <a
-            href={contactMailto("rodape")}
+            href={contactMailto("contato")}
             className="break-all text-base font-medium text-neutral-800 transition-colors hover:text-accent sm:text-lg"
           >
             {CONTACT_EMAIL}

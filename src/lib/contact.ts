@@ -2,12 +2,12 @@ import { BRAND_NAME } from "@/lib/brand";
 
 export const CONTACT_EMAIL = "hdgtldevelopment@gmail.com";
 
-export type ContactSource = "inicio" | "entregas" | "rodape";
+export type ContactSource = "inicio" | "entregas" | "contato";
 
 const SUBJECTS: Record<ContactSource, string> = {
   inicio: "Inicio",
   entregas: "Entregas",
-  rodape: "Contato",
+  contato: "Contato",
 };
 
 export function contactMailto(source: ContactSource): string {
