@@ -23,9 +23,8 @@ export function HeroSection() {
               Tecnologia que sai do papel e funciona no mundo real.
             </h1>
             <p className="mt-3 max-w-2xl text-base leading-relaxed text-white/90 sm:mt-4 sm:text-lg">
-              Frontends em React e Next.js, server-side rendering e soluções em
-              Node.js — com escopo claro, entrega previsível e foco em resultado
-              no mundo real.
+              Vue, React, Next.js e Node.js com TypeScript — escopo claro,
+              entrega previsível e foco no que funciona em produção.
             </p>
             <div className="mt-6 flex flex-col gap-3 sm:mt-8 sm:flex-row sm:flex-wrap sm:gap-4">
               <a

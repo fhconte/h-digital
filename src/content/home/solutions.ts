@@ -1,18 +1,17 @@
 import type { Comparison, FocusPoint } from "@/content/home/types";
 
 export const solutionExamples = [
-  "Frontends em JavaScript, React e Next.js com SSR",
-  "APIs, automações e serviços em Node.js",
-  "Design systems, sites e protótipos interativos",
-  "MVPs, validação e auditoria de produto",
-  "Dashboards, ferramentas internas e qualidade em produção",
+  "Frontends em Vue, React e Next.js com TypeScript",
+  "APIs e automações em Node.js",
+  "Sites, dashboards e ferramentas internas",
+  "Testes com Jest e Cypress, observabilidade com Sentry e Hotjar",
 ];
 
 export const techStack = [
-  "JavaScript",
+  "TypeScript",
+  "Vue",
   "React",
   "Next.js",
-  "SSR",
   "Node.js",
 ];
 
@@ -27,26 +26,26 @@ export const whyFocused: FocusPoint[] = [
   },
   {
     title: "Investimento previsível",
-    text: "Cada entrega tem proposta fechada. Você investe no que resolve a dor, não em discurso de escala.",
+    text: "Cada entrega tem proposta fechada. Você investe no que resolve a dor, não em promessa vaga.",
   },
   {
     title: "Impacto mensurável",
-    text: "Ferramentas que as pessoas usam no dia a dia — com métricas, feedback e evolução baseada em uso real.",
+    text: "Ferramentas que as pessoas usam no dia a dia — com feedback e evolução baseada em uso real.",
   },
 ];
 
 export const comparison: Comparison = {
   traditional: [
-    "Foco em startup e pitch",
-    "Prazos longos e incertos",
-    "Pressão por “mudar o mercado”",
-    "Modelo pesado em equity e escala",
+    "Escopo aberto que muda no meio do caminho",
+    "Prazos longos sem marcos claros",
+    "Stack escolhida por moda, não por necessidade",
+    "Difícil saber o que foi entregue de fato",
   ],
   hdigital: [
-    "Foco em produto que funciona de verdade",
-    "Entregas em ciclos com marcos claros",
-    "Resolver uma dor concreta com excelência",
-    "Projeto fechado, parceria ou produto próprio",
+    "Escopo fechado por entrega",
+    "Ciclos curtos com resultado visível",
+    "Vue, React, Next.js e Node.js com TypeScript",
+    "Código e produto que evoluem depois do lançamento",
   ],
 };
 
@@ -57,7 +56,7 @@ export const howWeWork = [
   },
   {
     title: "Projetos sob medida",
-    text: "para empresas, criadores e equipes que precisam de tech sem montar um departamento inteiro.",
+    text: "para empresas e equipes que precisam de tech sem montar um departamento inteiro.",
   },
   {
     title: "Evolução contínua",

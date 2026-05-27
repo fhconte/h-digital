@@ -11,7 +11,7 @@ const geistSans = Geist({
 export const metadata: Metadata = {
   title: `${BRAND_NAME} | Incubadora de soluções digitais`,
   description:
-    "Incubadora de soluções digitais — React, Next.js, SSR e Node.js. MVPs, automações, dashboards e produtos sob medida com escopo definido e entrega previsível.",
+    "Incubadora de soluções digitais — Vue, React, Next.js, TypeScript e Node.js. Sites, dashboards, APIs e produtos sob medida com escopo definido.",
 };
 
 export default function RootLayout({

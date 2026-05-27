@@ -2,72 +2,22 @@ import type { ProductCategory } from "@/content/home/types";
 
 export const productCategories: ProductCategory[] = [
   {
-    label: "Produto e experiência",
+    label: "Frontend e produto web",
     products: [
       {
-        title: "Design Systems sob medida",
+        title: "Frontends em Vue e React",
         description:
-          "Tokens, componentes e documentação para seu produto manter consistência visual e velocidade no desenvolvimento.",
+          "Interfaces com TypeScript — componentes, estado e integração com APIs no stack que o projeto pedir.",
       },
       {
-        title: "MVPs e validação",
+        title: "Sites e apps em Next.js",
         description:
-          "Versão funcional para testar hipóteses com usuários reais antes de comprometer budget em escala.",
+          "Páginas e aplicações em Next.js com TypeScript — institucional, produto ou ferramenta web com performance e SEO em mente.",
       },
       {
-        title: "Landing pages e sites",
+        title: "Dashboards e ferramentas internas",
         description:
-          "Páginas rápidas em Next.js — institucional, campanha ou lançamento, com SSR ou SSG quando o projeto pede performance e SEO.",
-      },
-      {
-        title: "Protótipos interativos",
-        description:
-          "Do conceito ao clique: protótipos navegáveis para alinhar time, cliente e investimento.",
-      },
-      {
-        title: "Auditoria de produto digital",
-        description:
-          "Análise focada de UX, performance e código — diagnóstico claro e prioridades de melhoria.",
-      },
-    ],
-  },
-  {
-    label: "Operação e dados",
-    products: [
-      {
-        title: "Dashboards e painéis",
-        description:
-          "Interfaces para visualizar dados, acompanhar métricas e apoiar decisões do dia a dia.",
-      },
-      {
-        title: "Ferramentas internas",
-        description:
-          "CRMs, gestão de leads, agendas e fluxos operacionais feitos para o seu processo.",
-      },
-      {
-        title: "Formulários e onboarding",
-        description:
-          "Cadastros, questionários, KYC leve e jornadas de entrada — fluxos claros que convertem e orientam.",
-      },
-    ],
-  },
-  {
-    label: "Frontend e plataforma web",
-    products: [
-      {
-        title: "Frontends React e Next.js",
-        description:
-          "Interfaces em JavaScript com componentes React — rotas, estado e integração com APIs, no padrão que o mercado já adota e mantém.",
-      },
-      {
-        title: "Server-side rendering (SSR)",
-        description:
-          "Renderização no servidor com Next.js — primeiro carregamento rápido, conteúdo dinâmico e melhor base para SEO em páginas que precisam ser encontradas.",
-      },
-      {
-        title: "Dashboards e apps web",
-        description:
-          "Painéis, fluxos internos e produtos SaaS no browser — experiência responsiva, tipada com TypeScript quando o projeto exige mais rigor.",
+          "Painéis, CRMs enxutos, gestão de leads e fluxos operacionais feitos para o processo do cliente.",
       },
     ],
   },
@@ -75,39 +25,29 @@ export const productCategories: ProductCategory[] = [
     label: "Backend e integrações",
     products: [
       {
-        title: "Soluções em Node.js",
+        title: "APIs e backend em Node.js",
         description:
-          "APIs REST, webhooks, filas e jobs no mesmo ecossistema JavaScript do frontend — menos atrito entre times e deploy mais coerente.",
+          "REST, webhooks e jobs em TypeScript no servidor — mesmo ecossistema do frontend quando faz sentido.",
       },
       {
         title: "Automações e integrações",
         description:
-          "Conectamos ferramentas, APIs e fluxos para eliminar trabalho manual repetitivo.",
-      },
-      {
-        title: "Assistentes e chatbots",
-        description:
-          "Suporte automatizado, FAQ inteligente ou triagem de demandas com escopo definido e mensurável.",
-      },
-      {
-        title: "APIs e microsserviços",
-        description:
-          "Endpoints e serviços pontuais em Node.js — integração ou job específico, sem arquitetura desnecessária.",
+          "Conectar ferramentas, APIs e fluxos para eliminar trabalho manual repetitivo.",
       },
     ],
   },
   {
-    label: "Qualidade e confiabilidade",
+    label: "Qualidade",
     products: [
-      {
-        title: "Observabilidade",
-        description:
-          "Sentry para erros e performance em produção, Hotjar para gravações, mapas de calor e funis — além de logs, métricas e alertas, com setup e dashboards sob medida.",
-      },
       {
         title: "Testes automatizados",
         description:
-          "Jest para testes unitários e de integração, Cypress para fluxos E2E nas jornadas críticas — suítes focadas e pipeline no CI para deploy com mais confiança.",
+          "Jest para unitário e integração, Cypress para E2E nas jornadas críticas — com pipeline no CI.",
+      },
+      {
+        title: "Observabilidade",
+        description:
+          "Sentry, Hotjar, logs e alertas — setup para enxergar erros, uso e comportamento em produção.",
       },
     ],
   },

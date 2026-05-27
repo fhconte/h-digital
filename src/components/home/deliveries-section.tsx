@@ -14,8 +14,8 @@ export function DeliveriesSection() {
         Soluções digitais que incubamos e construímos para você.
       </h2>
       <p className="mt-6 max-w-3xl text-base leading-8 text-neutral-600 sm:text-lg">
-        Do frontend em React e Next.js — com SSR quando precisa — ao backend em
-        Node.js, cada entrega tem escopo fechado e objetivo claro. O investimento
+        Vue, React, Next.js e Node.js com TypeScript — cada entrega tem escopo
+        fechado e objetivo claro. O investimento
         acompanha o desafio:{" "}
         <strong className="font-medium text-neutral-900">
           sob consulta, com proposta personalizada por projeto

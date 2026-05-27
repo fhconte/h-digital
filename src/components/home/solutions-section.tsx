@@ -18,24 +18,23 @@ export function SolutionsSection() {
           Soluções
         </p>
         <h2 className="mt-4 text-2xl font-semibold tracking-tight sm:text-3xl lg:text-4xl">
-          Incubadora de tecnologia para quem precisa de resultado, não de
-          discurso.
+          Desenvolvimento web com a stack que dominamos.
         </h2>
         <p className="mt-6 text-base leading-8 text-neutral-600 sm:text-lg">
-          Não vendemos promessa de unicórnio nem projeto sem fim. Criamos{" "}
+          Criamos{" "}
           <strong className="font-medium text-neutral-900">
             soluções digitais sob medida, com começo, meio e fim definidos
           </strong>{" "}
-          — da ideia à operação, com JavaScript no frontend (React, Next.js,
-          SSR) e Node.js no backend quando o produto precisa.
+          — com TypeScript no frontend (Vue, React, Next.js) e Node.js no
+          backend quando o produto precisa.
         </p>
       </div>
 
       <div className="mt-10 max-w-3xl">
         <h3 className="text-lg font-semibold text-neutral-900">Stack principal</h3>
         <p className="mt-3 text-neutral-600">
-          Ecossistema JavaScript de ponta a ponta — do browser ao servidor —
-          para entregar rápido sem sacrificar qualidade técnica.
+          TypeScript em todo o fluxo — do componente Vue ou React ao endpoint em
+          Node.js — com tipagem e manutenção em mente.
         </p>
         <ul className="mt-4 flex flex-wrap gap-2">
           {techStack.map((tech) => (
@@ -59,9 +58,9 @@ export function SolutionsSection() {
           meses e evolui com base no uso — não no palpite.
         </p>
         <p className="mt-4 text-neutral-600">
-          Um app Next.js com SSR que ranqueia e carrega rápido. Uma API em
-          Node.js que integra seus sistemas. Um MVP que valida antes de escalar.
-          Um painel que organiza decisões.{" "}
+          Um painel em Vue para o time operar. Um site em Next.js para o
+          negócio comunicar e converter. Uma API em Node.js que integra o que
+          já existe.{" "}
           <strong className="font-medium text-neutral-900">
             Foco no que importa, entregue com excelência.
           </strong>
@@ -87,7 +86,7 @@ export function SolutionsSection() {
       <div className="mt-16 grid gap-10 lg:grid-cols-2 lg:gap-16">
         <div>
           <h3 className="text-lg font-semibold text-neutral-500">
-            Incubadora tradicional
+            Projeto sem foco
           </h3>
           <ul className="mt-4 space-y-3 text-neutral-600">
             {comparison.traditional.map((item) => (
