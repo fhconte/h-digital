@@ -1,4 +1,4 @@
-import type { Comparison, FocusPoint } from "@/content/home/types";
+import type { FocusPoint } from "@/content/home/types";
 
 export const solutionExamples = [
   "Frontends em Vue, React e Next.js com TypeScript",
@@ -35,21 +35,6 @@ export const whyFocused: FocusPoint[] = [
     text: "Prioridade em ferramenta que o time usa no dia a dia, não só apresentação.",
   },
 ];
-
-export const comparison: Comparison = {
-  traditional: [
-    "Escopo que muda no meio do projeto",
-    "Prazo longo sem entrega intermediária",
-    "Tecnologia escolhida por moda",
-    "Difícil saber o que foi entregue",
-  ],
-  hdigital: [
-    "Escopo fechado por entrega",
-    "Entregas em ciclos curtos",
-    "Vue, React, Next.js e Node com TypeScript",
-    "Produto que dá para evoluir depois",
-  ],
-};
 
 export const howWeWork = [
   {

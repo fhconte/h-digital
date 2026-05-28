@@ -12,8 +12,3 @@ export type FocusPoint = {
   title: string;
   text: string;
 };
-
-export type Comparison = {
-  traditional: string[];
-  hdigital: string[];
-};

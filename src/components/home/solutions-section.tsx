@@ -1,6 +1,4 @@
-import { BRAND_NAME } from "@/lib/brand";
 import {
-  comparison,
   howWeWork,
   solutionExamples,
   techStack,
@@ -85,37 +83,6 @@ export function SolutionsSection() {
               </p>
             </div>
           ))}
-        </div>
-      </div>
-
-      <div className="mt-16 grid gap-10 lg:grid-cols-2 lg:gap-16">
-        <div>
-          <h3 className="text-lg font-semibold text-neutral-500">
-            Projeto sem foco
-          </h3>
-          <ul className="mt-4 space-y-3 text-neutral-600">
-            {comparison.traditional.map((item) => (
-              <li key={item} className="flex gap-3">
-                <span className="text-neutral-300" aria-hidden>
-                  ×
-                </span>
-                {item}
-              </li>
-            ))}
-          </ul>
-        </div>
-        <div>
-          <h3 className="text-lg font-semibold text-accent">{BRAND_NAME}</h3>
-          <ul className="mt-4 space-y-3 text-neutral-700">
-            {comparison.hdigital.map((item) => (
-              <li key={item} className="flex gap-3">
-                <span className="text-accent" aria-hidden>
-                  +
-                </span>
-                {item}
-              </li>
-            ))}
-          </ul>
         </div>
       </div>
 
