@@ -1,13 +1,16 @@
 import Image from "next/image";
+import { content } from "@/content";
 import { contactMailto } from "@/lib/contact";
 
 export function HeroSection() {
+  const { hero } = content;
+
   return (
     <section className="relative w-full">
       <div className="relative min-h-[min(85vh,520px)] w-full sm:min-h-[400px] sm:aspect-[21/9] lg:min-h-[420px]">
         <Image
           src="/brand/hero.jpg"
-          alt="Paisagem da Holanda com moinhos ao entardecer"
+          alt={hero.imageAlt}
           fill
           className="object-cover object-center"
           priority
@@ -17,27 +20,26 @@ export function HeroSection() {
         <div className="absolute inset-0 flex items-end px-4 pb-8 sm:px-6 sm:pb-10 lg:px-12 lg:pb-16">
           <div className="w-full max-w-3xl">
             <p className="mb-2 text-[0.65rem] font-medium uppercase tracking-[0.2em] text-white/80 sm:text-xs sm:tracking-[0.3em]">
-              Incubadora de soluções digitais
+              {hero.eyebrow}
             </p>
             <h1 className="text-2xl font-semibold leading-tight text-white sm:text-4xl lg:text-5xl">
-              Desenvolvimento web com Vue, React, Next.js e Node.
+              {hero.title}
             </h1>
             <p className="mt-3 max-w-2xl text-base leading-relaxed text-white/90 sm:mt-4 sm:text-lg">
-              TypeScript no frontend e no backend. Escopo fechado e prazo
-              combinado antes de começar.
+              {hero.description}
             </p>
             <div className="mt-6 flex flex-col gap-3 sm:mt-8 sm:flex-row sm:flex-wrap sm:gap-4">
               <a
                 href={contactMailto("inicio")}
                 className="inline-flex w-full items-center justify-center bg-accent px-6 py-3.5 text-sm font-semibold uppercase tracking-[0.12em] text-white transition-opacity hover:opacity-90 sm:w-auto"
               >
-                Falar conosco
+                {hero.ctaPrimary}
               </a>
               <a
                 href="#entregas"
                 className="inline-flex w-full items-center justify-center border border-white/80 px-6 py-3.5 text-sm font-semibold uppercase tracking-[0.12em] text-white transition-colors hover:bg-white/10 sm:w-auto"
               >
-                O que entregamos
+                {hero.ctaSecondary}
               </a>
             </div>
           </div>

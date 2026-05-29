@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { Geist } from "next/font/google";
-import { BRAND_NAME } from "@/lib/brand";
+import { content, defaultLocale } from "@/content";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -9,9 +9,8 @@ const geistSans = Geist({
 });
 
 export const metadata: Metadata = {
-  title: `${BRAND_NAME} | Incubadora de soluções digitais`,
-  description:
-    "Holanda Digital: Vue, React, Next.js, Node.js, deploy na Vercel e CI com GitHub Actions.",
+  title: content.metadata.title,
+  description: content.metadata.description,
 };
 
 export default function RootLayout({
@@ -21,7 +20,7 @@ export default function RootLayout({
 }>) {
   return (
     <html
-      lang="pt-BR"
+      lang={defaultLocale}
       className={`${geistSans.variable} h-full antialiased`}
       suppressHydrationWarning
     >

@@ -2,14 +2,11 @@
 
 import Image from "next/image";
 import { useState } from "react";
+import { content } from "@/content";
 import { BRAND_NAME } from "@/lib/brand";
-const navItems = [
-  { label: "Soluções", href: "#solucoes" },
-  { label: "Entregas", href: "#entregas" },
-  { label: "Contato", href: "#contato" },
-];
 
 export function SiteHeader() {
+  const { nav } = content;
   const [menuOpen, setMenuOpen] = useState(false);
 
   const closeMenu = () => setMenuOpen(false);
@@ -20,7 +17,7 @@ export function SiteHeader() {
         <a
           href="#"
           className="block shrink-0 leading-none"
-          aria-label={`${BRAND_NAME}, início`}
+          aria-label={nav.homeAriaLabel}
           onClick={closeMenu}
         >
           <Image
@@ -34,9 +31,9 @@ export function SiteHeader() {
           />
         </a>
 
-        <nav className="hidden lg:block" aria-label="Menu principal">
+        <nav className="hidden lg:block" aria-label={nav.mainMenuAriaLabel}>
           <ul className="flex items-center gap-8 text-sm font-medium uppercase tracking-[0.12em] text-neutral-700 xl:gap-10 xl:text-base">
-            {navItems.map((item) => (
+            {nav.items.map((item) => (
               <li key={item.href}>
                 <a
                   href={item.href}
@@ -54,10 +51,12 @@ export function SiteHeader() {
           className="inline-flex h-11 w-11 shrink-0 items-center justify-center rounded-md border border-neutral-200 text-neutral-700 transition-colors hover:border-accent hover:text-accent lg:hidden"
           aria-expanded={menuOpen}
           aria-controls="mobile-nav"
-          aria-label={menuOpen ? "Fechar menu" : "Abrir menu"}
+          aria-label={menuOpen ? nav.closeMenu : nav.openMenu}
           onClick={() => setMenuOpen((open) => !open)}
         >
-          <span className="sr-only">{menuOpen ? "Fechar" : "Menu"}</span>
+          <span className="sr-only">
+            {menuOpen ? nav.menuToggleClose : nav.menuToggleOpen}
+          </span>
           {menuOpen ? (
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -89,10 +88,10 @@ export function SiteHeader() {
       <nav
         id="mobile-nav"
         className={`border-t border-neutral-100 bg-white lg:hidden ${menuOpen ? "block" : "hidden"}`}
-        aria-label="Menu mobile"
+        aria-label={nav.mobileMenuAriaLabel}
       >
         <ul className="flex flex-col px-6 lg:px-12">
-          {navItems.map((item) => (
+          {nav.items.map((item) => (
             <li key={item.href}>
               <a
                 href={item.href}

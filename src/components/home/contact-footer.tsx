@@ -1,7 +1,10 @@
+import { content } from "@/content";
 import { BRAND_NAME } from "@/lib/brand";
 import { CONTACT_EMAIL, contactMailto } from "@/lib/contact";
 
 export function ContactFooter() {
+  const { contact } = content;
+
   return (
     <footer
       id="contato"
@@ -10,22 +13,19 @@ export function ContactFooter() {
       <div className="flex w-full flex-col gap-8 sm:flex-row sm:items-start sm:justify-between">
         <div className="max-w-md">
           <p className="font-medium uppercase tracking-[0.15em] text-neutral-700">
-            Contato
+            {contact.eyebrow}
           </p>
           <p className="mt-3 text-neutral-600">
-            Quer orçamento ou tirar dúvida?{" "}
+            {contact.intro.before}
             <a
               href={contactMailto("contato")}
               className="text-accent underline-offset-4 hover:underline"
             >
-              Escreve para a gente
-            </a>{" "}
-            contando o que precisa. Respondemos com uma proposta inicial.
+              {contact.intro.link}
+            </a>
+            {contact.intro.after}
           </p>
-          <p className="mt-4 text-sm text-neutral-500">
-            Só desenvolvimento. Domínio e hospedagem por sua conta. Escopo
-            fechado por entrega.
-          </p>
+          <p className="mt-4 text-sm text-neutral-500">{contact.note}</p>
         </div>
         <div className="text-sm text-neutral-500 sm:text-right">
           <a

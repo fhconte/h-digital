@@ -1,41 +1,41 @@
-import { productCategories } from "@/content/home";
+import { content } from "@/content";
 import { contactMailto } from "@/lib/contact";
 
 export function DeliveriesSection() {
+  const { deliveries } = content;
+
   return (
     <section
       id="entregas"
       className="w-full scroll-mt-32 border-t border-neutral-100 bg-neutral-50 px-4 py-12 sm:scroll-mt-36 sm:px-6 sm:py-16 lg:scroll-mt-40 lg:px-12 lg:py-24"
     >
       <p className="text-sm font-semibold uppercase tracking-[0.2em] text-accent">
-        O que entregamos
+        {deliveries.eyebrow}
       </p>
       <h2 className="mt-4 text-2xl font-semibold tracking-tight sm:text-3xl">
-        O que fazemos no dia a dia.
+        {deliveries.title}
       </h2>
       <p className="mt-6 max-w-3xl text-base leading-8 text-neutral-600 sm:text-lg">
-        Vue, React, Next.js e Node com TypeScript. Cada projeto com escopo
-        fechado. Valor{" "}
+        {deliveries.intro.before}
         <strong className="font-medium text-neutral-900">
-          sob consulta
+          {deliveries.intro.highlight}
         </strong>
-        , com proposta escrita antes de começar.
+        {deliveries.intro.after}
       </p>
       <p className="mt-4 max-w-3xl text-base leading-8 text-neutral-600">
-        Cobramos só o desenvolvimento. Para sites e apps Next.js, configuramos
-        deploy na Vercel na sua conta. Domínio e plano da Vercel você paga
-        direto ao provedor.
+        {deliveries.pricingNote}
       </p>
 
       <div className="mt-10 max-w-3xl rounded-2xl border border-dashed border-neutral-300 bg-white p-6 lg:p-8">
-        <h3 className="text-lg font-semibold text-neutral-900">Cases</h3>
+        <h3 className="text-lg font-semibold text-neutral-900">
+          {deliveries.cases.title}
+        </h3>
         <p className="mt-3 leading-7 text-neutral-600">
-          Em breve publicamos trabalhos com autorização do cliente. Por enquanto
-          a lista abaixo mostra o tipo de entrega que aceitamos.
+          {deliveries.cases.description}
         </p>
       </div>
 
-      {productCategories.map((category, index) => (
+      {deliveries.categories.map((category, index) => (
         <div key={category.label} className={index === 0 ? "mt-12" : "mt-16"}>
           <h3 className="text-lg font-semibold text-neutral-900">
             {category.label}
@@ -59,14 +59,14 @@ export function DeliveriesSection() {
       ))}
 
       <p className="mt-12 max-w-3xl text-neutral-600">
-        Precisa de outra coisa?{" "}
+        {deliveries.cta.before}
         <a
           href={contactMailto("entregas")}
           className="font-medium text-accent underline-offset-4 hover:underline"
         >
-          Manda um e-mail
-        </a>{" "}
-        com o que você precisa. Respondemos com escopo e prazo para avaliar.
+          {deliveries.cta.link}
+        </a>
+        {deliveries.cta.after}
       </p>
     </section>
   );
