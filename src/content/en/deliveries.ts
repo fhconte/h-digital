@@ -5,7 +5,7 @@ export const deliveries: DeliveriesContent = {
   title: "What we do day to day.",
   intro: {
     before:
-      "Vue, React, Next.js, and Node with TypeScript. Each project with fixed scope. Pricing ",
+      "Custom design systems at the center; Vue, React, Next.js, and Node with TypeScript when the product needs it. Pricing ",
     highlight: "on request",
     after: ", with a written proposal before we start.",
   },
@@ -17,6 +17,16 @@ export const deliveries: DeliveriesContent = {
       "We will publish client work here with permission soon. For now, the list below shows the kind of delivery we take on.",
   },
   categories: [
+    {
+      label: "Design Systems",
+      products: [
+        {
+          title: "Custom design systems",
+          description:
+            "Fully customizable system with accessibility, performance, security, and strong branding. Modular or integrated use, split across multiple projects, documented in Storybook as the company reference.",
+        },
+      ],
+    },
     {
       label: "Frontend & web product",
       products: [

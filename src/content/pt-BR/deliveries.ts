@@ -4,7 +4,8 @@ export const deliveries: DeliveriesContent = {
   eyebrow: "O que entregamos",
   title: "O que fazemos no dia a dia.",
   intro: {
-    before: "Vue, React, Next.js e Node com TypeScript. Cada projeto com escopo fechado. Valor ",
+    before:
+      "Design systems sob medida no centro; Vue, React, Next.js e Node com TypeScript quando o produto pede. Valor ",
     highlight: "sob consulta",
     after: ", com proposta escrita antes de começar.",
   },
@@ -16,6 +17,16 @@ export const deliveries: DeliveriesContent = {
       "Em breve publicamos trabalhos com autorização do cliente. Por enquanto a lista abaixo mostra o tipo de entrega que aceitamos.",
   },
   categories: [
+    {
+      label: "Design Systems",
+      products: [
+        {
+          title: "Design Systems sob medida",
+          description:
+            "Sistema totalmente customizável, com acessibilidade, performance, segurança e branding forte. Uso modular ou integrado, desmembrável para vários projetos e documentado em Storybook como referência da empresa.",
+        },
+      ],
+    },
     {
       label: "Frontend e produto web",
       products: [

@@ -2,55 +2,56 @@ import type { SolutionsContent } from "@/content/types";
 
 export const solutions: SolutionsContent = {
   eyebrow: "Soluções",
-  title: "Trabalhamos com o que conhecemos bem.",
+  title: "Design system como fundação — não como add-on.",
   intro: {
-    before: "Fazemos sites, painéis e APIs com ",
-    highlight: "TypeScript, Vue, React, Next.js e Node.js",
-    after: ". Cada projeto tem escopo e prazo definidos na proposta.",
+    before: "Nosso core são ",
+    highlight: "design systems sob medida",
+    after:
+      ": totalmente customizáveis, pensados em acessibilidade, performance, segurança e branding forte. Depois disso, sites, painéis e APIs em TypeScript, Vue, React, Next.js e Node.js.",
   },
   stack: {
-    title: "Stack principal",
+    title: "O que compõe o sistema",
     description:
-      "Do componente no browser até a API no servidor. Código no GitHub, pipeline no GitHub Actions e site ou app publicado na Vercel.",
-    toolingLabel: "Publicação e CI",
+      "Tokens, componentes e padrões de interface documentados em Storybook — referência viva para design, produto e engenharia. Modular para adotar por partes ou integrado de ponta a ponta.",
+    toolingLabel: "Entrega e operação",
   },
-  techStack: ["TypeScript", "Vue", "React", "Next.js", "Node.js"],
+  techStack: ["Storybook", "TypeScript", "Vue", "React", "Next.js", "Node.js"],
   toolingStack: ["Vercel", "GitHub Actions"],
   howWeWork: {
     title: "Como trabalhamos",
     description:
-      "Cada job tem um objetivo claro: site, painel, integração ou API. Prazo e entregas combinados na proposta. Repositório no GitHub, CI no GitHub Actions e publicação na Vercel quando for projeto web.",
+      "O design system pode ser usado de forma modular ou integrada ao produto. Componentes e tokens se desmembram e reaproveitam em vários projetos sem refazer a base a cada entrega.",
     examples:
-      "Exemplos do que já fazemos: painel em Vue, site em Next.js, backend em Node para ligar sistemas que você já usa.",
+      "Entregamos o catálogo no Storybook para o time consultar, testar e evoluir — além do código pronto para produção.",
   },
   whyHire: {
-    title: "Por que contratar",
+    title: "Pilares do sistema",
     items: [
       {
-        title: "Escopo definido",
-        text: "Antes de começar, você sabe o que entra na entrega. Sem escopo que cresce no meio do projeto.",
+        title: "Acessibilidade",
+        text: "Componentes e padrões pensados para uso inclusivo desde o início, não como correção depois.",
       },
       {
-        title: "Prazo combinado",
-        text: "Marcos claros do início ao fim. Menos reunião vaga, mais coisa pronta para usar.",
+        title: "Performance",
+        text: "Base enxuta, tokens consistentes e componentes otimizados para carregar e escalar bem.",
       },
       {
-        title: "Orçamento fechado",
-        text: "Proposta por entrega. Você paga o que foi combinado, sem surpresa no meio do caminho.",
+        title: "Segurança",
+        text: "Boas práticas no frontend e nas integrações, com revisão de dependências e padrões seguros.",
       },
       {
-        title: "Uso de verdade",
-        text: "Prioridade em ferramenta que o time usa no dia a dia, não só apresentação.",
+        title: "Branding interativo",
+        text: "Identidade visual forte e flexível — motion, estados e tom de marca aplicados de forma coerente.",
       },
     ],
   },
   whatWeBuild: {
     title: "O que desenvolvemos",
     items: [
+      "Design systems customizáveis documentados em Storybook",
+      "Bibliotecas modulares reutilizáveis em múltiplos produtos",
       "Frontends em Vue, React e Next.js com TypeScript",
-      "APIs e automações em Node.js",
-      "Sites, dashboards e ferramentas internas",
-      "Deploy na Vercel, CI com GitHub Actions, testes e monitoramento",
+      "APIs, automações e deploy na Vercel com CI no GitHub Actions",
     ],
   },
   incubatorRole: {
