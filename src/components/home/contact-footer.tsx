@@ -1,13 +1,16 @@
-import { content } from "@/content";
+"use client";
+
+import { useContent } from "@/i18n/locale-provider";
 import { BRAND_NAME } from "@/lib/brand";
 import { CONTACT_EMAIL, contactMailto } from "@/lib/contact";
 
 export function ContactFooter() {
-  const { contact } = content;
+  const content = useContent();
+  const { contact, sections } = content;
 
   return (
     <footer
-      id="contato"
+      id={sections.contact}
       className="w-full scroll-mt-32 border-t border-neutral-100 px-4 py-10 sm:scroll-mt-36 sm:px-6 lg:scroll-mt-40 lg:px-12"
     >
       <div className="flex w-full flex-col gap-8 sm:flex-row sm:items-start sm:justify-between">
@@ -18,7 +21,7 @@ export function ContactFooter() {
           <p className="mt-3 text-neutral-600">
             {contact.intro.before}
             <a
-              href={contactMailto("contato")}
+              href={contactMailto("contato", content)}
               className="text-accent underline-offset-4 hover:underline"
             >
               {contact.intro.link}
@@ -29,7 +32,7 @@ export function ContactFooter() {
         </div>
         <div className="text-sm text-neutral-500 sm:text-right">
           <a
-            href={contactMailto("contato")}
+            href={contactMailto("contato", content)}
             className="break-all text-base font-medium text-neutral-800 transition-colors hover:text-accent sm:text-lg"
           >
             {CONTACT_EMAIL}

@@ -1,17 +1,11 @@
-import type { Metadata } from "next";
 import { Geist } from "next/font/google";
-import { content, defaultLocale } from "@/content";
+import { defaultLocale } from "@/content";
 import "./globals.css";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
 });
-
-export const metadata: Metadata = {
-  title: content.metadata.title,
-  description: content.metadata.description,
-};
 
 export default function RootLayout({
   children,
@@ -27,7 +21,9 @@ export default function RootLayout({
       <body
         className="min-h-full flex flex-col font-sans"
         suppressHydrationWarning
-      >{children}</body>
+      >
+        {children}
+      </body>
     </html>
   );
 }

@@ -1,11 +1,13 @@
-import { content } from "@/content";
+"use client";
+
+import { useContent } from "@/i18n/locale-provider";
 
 export function SolutionsSection() {
-  const { solutions } = content;
+  const { solutions, sections } = useContent();
 
   return (
     <section
-      id="solucoes"
+      id={sections.solutions}
       className="w-full scroll-mt-32 px-4 py-12 sm:scroll-mt-36 sm:px-6 sm:py-16 lg:scroll-mt-40 lg:px-12 lg:py-24"
     >
       <div className="max-w-3xl">

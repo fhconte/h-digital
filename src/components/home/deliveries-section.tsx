@@ -1,12 +1,15 @@
-import { content } from "@/content";
+"use client";
+
+import { useContent } from "@/i18n/locale-provider";
 import { contactMailto } from "@/lib/contact";
 
 export function DeliveriesSection() {
-  const { deliveries } = content;
+  const content = useContent();
+  const { deliveries, sections } = content;
 
   return (
     <section
-      id="entregas"
+      id={sections.deliveries}
       className="w-full scroll-mt-32 border-t border-neutral-100 bg-neutral-50 px-4 py-12 sm:scroll-mt-36 sm:px-6 sm:py-16 lg:scroll-mt-40 lg:px-12 lg:py-24"
     >
       <p className="text-sm font-semibold uppercase tracking-[0.2em] text-accent">
@@ -61,7 +64,7 @@ export function DeliveriesSection() {
       <p className="mt-12 max-w-3xl text-neutral-600">
         {deliveries.cta.before}
         <a
-          href={contactMailto("entregas")}
+          href={contactMailto("entregas", content)}
           className="font-medium text-accent underline-offset-4 hover:underline"
         >
           {deliveries.cta.link}

@@ -1,22 +1,22 @@
-import { defaultLocale, type Locale } from "@/content/locale";
+import { en } from "@/content/en";
+import {
+  defaultLocale,
+  hasLocale,
+  localeLabels,
+  locales,
+  type Locale,
+} from "@/content/locale";
 import { ptBR } from "@/content/pt-BR";
 import type { SiteContent } from "@/content/types";
 
-const catalogs: Partial<Record<Locale, SiteContent>> = {
+const catalogs: Record<Locale, SiteContent> = {
   "pt-BR": ptBR,
+  en,
 };
 
-export function getContent(locale: Locale = defaultLocale): SiteContent {
-  const content = catalogs[locale];
-
-  if (!content) {
-    throw new Error(`Content not found for locale "${locale}".`);
-  }
-
-  return content;
+export function getContent(locale: Locale): SiteContent {
+  return catalogs[locale];
 }
 
-export const content = getContent();
-
 export type { Locale, SiteContent };
-export { defaultLocale, locales } from "@/content/locale";
+export { defaultLocale, hasLocale, localeLabels, locales };

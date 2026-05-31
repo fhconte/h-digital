@@ -1,5 +1,14 @@
 export const defaultLocale = "pt-BR" as const;
 
-export type Locale = typeof defaultLocale | "en";
+export const locales = [defaultLocale, "en"] as const;
 
-export const locales: Locale[] = [defaultLocale];
+export type Locale = (typeof locales)[number];
+
+export const localeLabels: Record<Locale, string> = {
+  "pt-BR": "PT",
+  en: "EN",
+};
+
+export function hasLocale(value: string): value is Locale {
+  return locales.includes(value as Locale);
+}

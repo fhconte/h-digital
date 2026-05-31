@@ -104,11 +104,18 @@ export type ContactContent = {
   };
 };
 
+export type SectionIds = {
+  solutions: string;
+  deliveries: string;
+  contact: string;
+};
+
 export type SiteContent = {
   metadata: {
     title: string;
     description: string;
   };
+  sections: SectionIds;
   hero: HeroContent;
   nav: NavContent;
   solutions: SolutionsContent;
