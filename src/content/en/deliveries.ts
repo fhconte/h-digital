@@ -5,7 +5,7 @@ export const deliveries: DeliveriesContent = {
   title: "What we do day to day.",
   intro: {
     before:
-      "Custom design systems at the center; Vue, React, Next.js, and Node with TypeScript when the product needs it. Pricing ",
+      "Vue, React, Next.js, and Node with TypeScript. Each project with fixed scope. Pricing ",
     highlight: "on request",
     after: ", with a written proposal before we start.",
   },

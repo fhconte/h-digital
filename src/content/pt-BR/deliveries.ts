@@ -4,8 +4,7 @@ export const deliveries: DeliveriesContent = {
   eyebrow: "O que entregamos",
   title: "O que fazemos no dia a dia.",
   intro: {
-    before:
-      "Design systems sob medida no centro; Vue, React, Next.js e Node com TypeScript quando o produto pede. Valor ",
+    before: "Vue, React, Next.js e Node com TypeScript. Cada projeto com escopo fechado. Valor ",
     highlight: "sob consulta",
     after: ", com proposta escrita antes de começar.",
   },

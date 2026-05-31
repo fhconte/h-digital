@@ -4,6 +4,6 @@ export const site = {
   metadata: {
     title: `${BRAND_NAME} | Digital solutions incubator`,
     description:
-      "Holanda Digital: custom design systems with Storybook, accessibility, performance, and strong branding. Vue, React, Next.js, and Node.js.",
+      "Holanda Digital: Vue, React, Next.js, Node.js, Vercel deployment, and CI with GitHub Actions.",
   },
 };

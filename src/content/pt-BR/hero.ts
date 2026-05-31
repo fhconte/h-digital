@@ -1,10 +1,10 @@
 import type { HeroContent } from "@/content/types";
 
 export const hero: HeroContent = {
-  eyebrow: "Design systems sob medida",
-  title: "Componentes modulares, branding forte e referência viva para o seu produto.",
+  eyebrow: "Incubadora de soluções digitais",
+  title: "Desenvolvimento web com Vue, React, Next.js e Node.",
   description:
-    "Construímos design systems totalmente customizáveis, com acessibilidade, performance, segurança e identidade interativa. Uso modular ou integrado, reutilizável em vários projetos e documentado em Storybook.",
+    "TypeScript no frontend e no backend. Escopo fechado e prazo combinado antes de começar.",
   ctaPrimary: "Falar conosco",
   ctaSecondary: "O que entregamos",
   imageAlt: "Paisagem da Holanda com moinhos ao entardecer",
