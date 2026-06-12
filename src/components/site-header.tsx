@@ -15,7 +15,7 @@ export function SiteHeader() {
 
   return (
     <header className="sticky top-0 z-50 w-full border-b border-neutral-100 bg-white">
-      <div className="flex items-center justify-between gap-4 px-6 lg:px-12">
+      <div className="flex items-center justify-between gap-4 px-6 py-4 sm:py-5 lg:px-12 lg:py-6">
         <Link
           href={`/${locale}`}
           className="block shrink-0 leading-none"
