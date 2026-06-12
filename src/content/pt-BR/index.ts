@@ -1,10 +1,10 @@
 import { contact } from "@/content/pt-BR/contact";
-import { deliveries } from "@/content/pt-BR/deliveries";
+import { experience } from "@/content/pt-BR/experience";
 import { hero } from "@/content/pt-BR/hero";
 import { nav } from "@/content/pt-BR/nav";
 import { sections } from "@/content/pt-BR/sections";
 import { site } from "@/content/pt-BR/site";
-import { solutions } from "@/content/pt-BR/solutions";
+import { stack } from "@/content/pt-BR/stack";
 import type { SiteContent } from "@/content/types";
 
 export const ptBR: SiteContent = {
@@ -12,7 +12,7 @@ export const ptBR: SiteContent = {
   sections,
   hero,
   nav,
-  solutions,
-  deliveries,
+  stack,
+  experience,
   contact,
 };

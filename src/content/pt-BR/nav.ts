@@ -4,8 +4,8 @@ import { BRAND_NAME } from "@/lib/brand";
 
 export const nav: NavContent = {
   items: [
-    { label: "Soluções", href: `#${sections.solutions}` },
-    { label: "Entregas", href: `#${sections.deliveries}` },
+    { label: "Stack", href: `#${sections.stack}` },
+    { label: "Experiência", href: `#${sections.experience}` },
     { label: "Contato", href: `#${sections.contact}` },
   ],
   homeAriaLabel: `${BRAND_NAME}, início`,

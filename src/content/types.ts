@@ -1,11 +1,11 @@
-export type Product = {
+export type ExperienceRole = {
   title: string;
   description: string;
 };
 
-export type ProductCategory = {
+export type ExperiencePeriod = {
   label: string;
-  products: Product[];
+  roles: ExperienceRole[];
 };
 
 export type FocusPoint = {
@@ -13,7 +13,7 @@ export type FocusPoint = {
   text: string;
 };
 
-export type HowWeWorkItem = {
+export type LabeledItem = {
   title: string;
   text: string;
 };
@@ -50,7 +50,7 @@ export type NavContent = {
   menuToggleClose: string;
 };
 
-export type SolutionsContent = {
+export type StackContent = {
   eyebrow: string;
   title: string;
   intro: TextWithHighlight;
@@ -61,52 +61,58 @@ export type SolutionsContent = {
   };
   techStack: string[];
   toolingStack: string[];
-  howWeWork: {
+  approach: {
     title: string;
     description: string;
     examples: string;
   };
-  whyHire: {
+  strengths: {
     title: string;
     items: FocusPoint[];
   };
-  whatWeBuild: {
+  coreSkills: {
     title: string;
     items: string[];
   };
-  incubatorRole: {
+  industries: {
     title: string;
-    items: HowWeWorkItem[];
+    items: LabeledItem[];
   };
 };
 
-export type DeliveriesContent = {
+export type ExperienceContent = {
   eyebrow: string;
   title: string;
   intro: TextWithHighlight;
-  pricingNote: string;
-  cases: {
+  backgroundNote: string;
+  highlights: {
     title: string;
     description: string;
   };
-  categories: ProductCategory[];
+  periods: ExperiencePeriod[];
   cta: TextWithLink;
+};
+
+export type SocialLink = {
+  label: string;
+  href: string;
 };
 
 export type ContactContent = {
   eyebrow: string;
   intro: TextWithLink;
   note: string;
+  socialLinks: SocialLink[];
   emailSubjects: {
-    inicio: string;
-    entregas: string;
-    contato: string;
+    home: string;
+    experience: string;
+    contact: string;
   };
 };
 
 export type SectionIds = {
-  solutions: string;
-  deliveries: string;
+  stack: string;
+  experience: string;
   contact: string;
 };
 
@@ -118,7 +124,7 @@ export type SiteContent = {
   sections: SectionIds;
   hero: HeroContent;
   nav: NavContent;
-  solutions: SolutionsContent;
-  deliveries: DeliveriesContent;
+  stack: StackContent;
+  experience: ExperienceContent;
   contact: ContactContent;
 };

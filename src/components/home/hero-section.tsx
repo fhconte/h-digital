@@ -33,13 +33,13 @@ export function HeroSection() {
             </p>
             <div className="mt-6 flex flex-col gap-3 sm:mt-8 sm:flex-row sm:flex-wrap sm:gap-4">
               <a
-                href={contactMailto("inicio", content)}
+                href={contactMailto("home", content)}
                 className="inline-flex w-full items-center justify-center bg-accent px-6 py-3.5 text-sm font-semibold uppercase tracking-[0.12em] text-white transition-opacity hover:opacity-90 sm:w-auto"
               >
                 {hero.ctaPrimary}
               </a>
               <a
-                href={`#${sections.deliveries}`}
+                href={`#${sections.experience}`}
                 className="inline-flex w-full items-center justify-center border border-white/80 px-6 py-3.5 text-sm font-semibold uppercase tracking-[0.12em] text-white transition-colors hover:bg-white/10 sm:w-auto"
               >
                 {hero.ctaSecondary}

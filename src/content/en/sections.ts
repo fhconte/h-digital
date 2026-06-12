@@ -1,7 +1,7 @@
 import type { SectionIds } from "@/content/types";
 
 export const sections: SectionIds = {
-  solutions: "solutions",
-  deliveries: "deliveries",
+  stack: "stack",
+  experience: "experience",
   contact: "contact",
 };

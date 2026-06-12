@@ -1,11 +1,12 @@
 import type { HeroContent } from "@/content/types";
 
 export const hero: HeroContent = {
-  eyebrow: "Incubadora de soluções digitais",
-  title: "Desenvolvimento web com Vue, React, Next.js e Node.",
+  eyebrow: "Software Engineer · Curitiba, Brasil",
+  title:
+    "Produtos web escaláveis com TypeScript, React, Next.js, Vue e Node.",
   description:
-    "TypeScript no frontend e no backend. Escopo fechado e prazo combinado antes de começar.",
-  ctaPrimary: "Falar conosco",
-  ctaSecondary: "O que entregamos",
-  imageAlt: "Paisagem da Holanda com moinhos ao entardecer",
+    "Cerca de 15 anos construindo e mantendo aplicações web em saúde, automotivo, educação, banca e pesquisa — com foco em arquitetura, qualidade, performance e experiência do usuário.",
+  ctaPrimary: "Falar comigo",
+  ctaSecondary: "Ver experiência",
+  imageAlt: "Flávio Conte, Software Engineer",
 };

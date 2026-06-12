@@ -3,14 +3,24 @@ import type { ContactContent } from "@/content/types";
 export const contact: ContactContent = {
   eyebrow: "Contact",
   intro: {
-    before: "Need a quote or have a question? ",
-    link: "Send us an email",
-    after: " with what you need. We reply with an initial proposal.",
+    before: "Want to talk about opportunities or projects? ",
+    link: "Send me an email",
+    after: " — I'll get back to you soon.",
   },
-  note: "Development only. Domain and hosting are on you. Fixed scope per delivery.",
+  note: "Curitiba, Brazil · Available for remote work.",
+  socialLinks: [
+    {
+      label: "LinkedIn",
+      href: "https://www.linkedin.com/in/flaviodeholanda/",
+    },
+    {
+      label: "GitHub",
+      href: "https://github.com/fhconte",
+    },
+  ],
   emailSubjects: {
-    inicio: "Home",
-    entregas: "Deliveries",
-    contato: "Contact",
+    home: "Home",
+    experience: "Experience",
+    contact: "Contact",
   },
 };

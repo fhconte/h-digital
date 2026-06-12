@@ -1,8 +1,8 @@
 import { SiteHeader } from "@/components/site-header";
 import { ContactFooter } from "@/components/home/contact-footer";
-import { DeliveriesSection } from "@/components/home/deliveries-section";
+import { ExperienceSection } from "@/components/home/experience-section";
 import { HeroSection } from "@/components/home/hero-section";
-import { SolutionsSection } from "@/components/home/solutions-section";
+import { StackSection } from "@/components/home/stack-section";
 
 export function HomePage() {
   return (
@@ -10,8 +10,8 @@ export function HomePage() {
       <SiteHeader />
       <main className="w-full">
         <HeroSection />
-        <SolutionsSection />
-        <DeliveriesSection />
+        <StackSection />
+        <ExperienceSection />
       </main>
       <ContactFooter />
     </div>

@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 import { LocaleSwitcher } from "@/components/locale-switcher";
@@ -23,15 +22,12 @@ export function SiteHeader() {
           aria-label={nav.homeAriaLabel}
           onClick={closeMenu}
         >
-          <Image
-            src="/brand/logo.png"
-            alt={BRAND_NAME}
-            width={944}
-            height={531}
-            className="block h-28 w-auto sm:h-32 md:h-36 lg:h-40 xl:h-44"
-            priority
-            sizes="(max-width: 640px) 200px, (max-width: 1024px) 260px, 320px"
-          />
+          <span className="text-lg font-semibold tracking-tight text-neutral-900 sm:text-xl">
+            {BRAND_NAME}
+          </span>
+          <span className="mt-1 block text-xs font-medium uppercase tracking-[0.15em] text-neutral-500">
+            Software Engineer
+          </span>
         </Link>
 
         <div className="hidden items-center gap-8 lg:flex xl:gap-10">

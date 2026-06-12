@@ -1,7 +1,7 @@
 import { BRAND_NAME } from "@/lib/brand";
 import type { SiteContent } from "@/content/types";
 
-export const CONTACT_EMAIL = "hdgtldevelopment@gmail.com";
+export const CONTACT_EMAIL = "flaviohconte@gmail.com";
 
 export type ContactSource = keyof SiteContent["contact"]["emailSubjects"];
 

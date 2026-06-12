@@ -1,10 +1,10 @@
 import { contact } from "@/content/en/contact";
-import { deliveries } from "@/content/en/deliveries";
+import { experience } from "@/content/en/experience";
 import { hero } from "@/content/en/hero";
 import { nav } from "@/content/en/nav";
 import { sections } from "@/content/en/sections";
 import { site } from "@/content/en/site";
-import { solutions } from "@/content/en/solutions";
+import { stack } from "@/content/en/stack";
 import type { SiteContent } from "@/content/types";
 
 export const en: SiteContent = {
@@ -12,7 +12,7 @@ export const en: SiteContent = {
   sections,
   hero,
   nav,
-  solutions,
-  deliveries,
+  stack,
+  experience,
   contact,
 };

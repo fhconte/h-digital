@@ -1,8 +1,8 @@
-# Holanda Digital
+# Flávio Conte
 
-Incubadora de **soluções digitais** — produtos e ferramentas com escopo definido, entrega previsível e foco em resultado real para o negócio.
+Site pessoal de **Software Engineer** — stack, experiência e contato.
 
-**Site:** [holanda-digital](https://holandadigital.vercel.app/) · desenvolvimento local em [http://localhost:3000](http://localhost:3000)
+**Desenvolvimento local:** [http://localhost:3000](http://localhost:3000)
 
 ## Stack
 

@@ -21,7 +21,7 @@ export function ContactFooter() {
           <p className="mt-3 text-neutral-600">
             {contact.intro.before}
             <a
-              href={contactMailto("contato", content)}
+              href={contactMailto("contact", content)}
               className="text-accent underline-offset-4 hover:underline"
             >
               {contact.intro.link}
@@ -32,11 +32,25 @@ export function ContactFooter() {
         </div>
         <div className="text-sm text-neutral-500 sm:text-right">
           <a
-            href={contactMailto("contato", content)}
+            href={contactMailto("contact", content)}
             className="break-all text-base font-medium text-neutral-800 transition-colors hover:text-accent sm:text-lg"
           >
             {CONTACT_EMAIL}
           </a>
+          <ul className="mt-4 flex flex-col gap-2 sm:items-end">
+            {contact.socialLinks.map((link) => (
+              <li key={link.href}>
+                <a
+                  href={link.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="font-medium text-neutral-700 transition-colors hover:text-accent"
+                >
+                  {link.label}
+                </a>
+              </li>
+            ))}
+          </ul>
           <p className="mt-6">
             © {new Date().getFullYear()} {BRAND_NAME}
           </p>

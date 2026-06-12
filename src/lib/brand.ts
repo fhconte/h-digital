@@ -1,1 +1,1 @@
-export const BRAND_NAME = "Holanda Digital";
+export const BRAND_NAME = "Flávio Conte";
