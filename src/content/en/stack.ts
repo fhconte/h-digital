@@ -7,12 +7,12 @@ export const stack: StackContent = {
     before: "I work with ",
     highlight: "TypeScript, React, Next.js, Vue, and Node.js",
     after:
-      ", along with frontend architecture, design systems, monorepos, Zod validation, GraphQL, Firebase, and Docker.",
+      ", along with frontend architecture, design systems, monorepos, data modeling, Zod validation, GraphQL, Firebase, and Docker.",
   },
   stack: {
     title: "Core stack",
     description:
-      "From browser components to API integrations. Testing with Jest, Cypress, and React Testing Library. CI/CD with GitHub Actions and deployment on Vercel.",
+      "From browser components to API integrations, data models, and MySQL and NoSQL databases. Testing with Jest, Cypress, and React Testing Library. CI/CD with GitHub Actions, AWS, AWS CLI, Google Cloud, and deployment on Vercel.",
     toolingLabel: "Tools & practices",
   },
   techStack: [
@@ -23,6 +23,10 @@ export const stack: StackContent = {
     "Node.js",
     "GraphQL",
     "Zod",
+    "MySQL",
+    "NoSQL",
+    "AWS",
+    "Google Cloud",
     "Docker",
   ],
   toolingStack: [
@@ -32,12 +36,13 @@ export const stack: StackContent = {
     "Storybook",
     "Turborepo",
     "Firebase",
+    "AWS CLI",
     "Figma",
   ],
   approach: {
     title: "How I work",
     description:
-      "Close to product and business needs, with a focus on scalability, maintainability, and performance. I contribute to architecture decisions, testing strategies, gradual refactors, and solutions that help teams move faster without compromising stability.",
+      "Close to product and business needs, with a focus on scalability, maintainability, and performance. I contribute to architecture decisions, data models, algorithms in JavaScript environments, testing strategies, gradual refactors, and solutions that help teams move faster without compromising stability.",
     examples:
       "Experience with SSR, micro frontends, SPAs, OOP, design patterns, TDD/BDD/DDD, and design systems documented in Storybook.",
   },
@@ -46,11 +51,11 @@ export const stack: StackContent = {
     items: [
       {
         title: "Frontend architecture",
-        text: "Monorepos, design tokens, component libraries, and reusable TypeScript and ESLint configurations.",
+        text: "Monorepos, design tokens, component libraries, data models, and reusable TypeScript and ESLint configurations.",
       },
       {
         title: "Quality & testing",
-        text: "Jest, Cypress, and React Testing Library on critical flows, with CI pipelines before deployment.",
+        text: "Jest, Cypress, and React Testing Library on critical flows, with CI/CD pipelines using AWS, AWS CLI, Google Cloud, and GitHub Actions.",
       },
       {
         title: "UX/UI & design systems",
@@ -67,7 +72,8 @@ export const stack: StackContent = {
     items: [
       "Customizable design systems documented in Storybook",
       "Frontends in React, Vue, and Next.js with TypeScript",
-      "APIs, integrations, and automations in Node.js",
+      "APIs, integrations, algorithms, and automations in Node.js",
+      "Data modeling with MySQL and NoSQL databases",
       "Dashboards, web apps, and internal tools",
       "Automated testing, CI/CD, and continuous performance improvements",
     ],
@@ -89,7 +95,7 @@ export const stack: StackContent = {
       },
       {
         title: "Media & agencies",
-        text: "Grupo Globo/GPC, Get Chute, and global brands — component libraries, mobile-first, and SCRUM.",
+        text: "Grupo Globo/GPC, Get Chute, and global brands — component libraries, mobile-first, and Scrum.",
       },
     ],
   },

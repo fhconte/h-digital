@@ -12,7 +12,7 @@ export const stack: StackContent = {
   stack: {
     title: "Stack principal",
     description:
-      "Do componente no browser até integrações com APIs. Testes com Jest, Cypress e React Testing Library. CI/CD com GitHub Actions e publicação na Vercel.",
+      "Do componente no navegador até integrações com APIs, modelos de dados e bancos MySQL e NoSQL. Testes com Jest, Cypress e React Testing Library. CI/CD com GitHub Actions, AWS, AWS CLI, Google Cloud e publicação na Vercel.",
     toolingLabel: "Ferramentas e práticas",
   },
   techStack: [
@@ -23,6 +23,10 @@ export const stack: StackContent = {
     "Node.js",
     "GraphQL",
     "Zod",
+    "MySQL",
+    "NoSQL",
+    "AWS",
+    "Google Cloud",
     "Docker",
   ],
   toolingStack: [
@@ -32,12 +36,13 @@ export const stack: StackContent = {
     "Storybook",
     "Turborepo",
     "Firebase",
+    "AWS CLI",
     "Figma",
   ],
   approach: {
     title: "Como trabalho",
     description:
-      "Próximo de produto e negócio, com foco em escalabilidade, manutenibilidade e performance. Participo de decisões de arquitetura, estratégias de teste, refactors graduais e entregas que ajudam o time a ir mais rápido sem perder estabilidade.",
+      "Próximo de produto e negócio, com foco em escalabilidade, manutenibilidade e performance. Participo de decisões de arquitetura, modelos de dados, algoritmos em ambientes JavaScript, estratégias de teste, refatorações graduais e entregas que ajudam o time a ir mais rápido sem perder estabilidade.",
     examples:
       "Experiência em SSR, micro frontends, SPA, OOP, design patterns, TDD/BDD/DDD e design systems documentados em Storybook.",
   },
@@ -46,11 +51,11 @@ export const stack: StackContent = {
     items: [
       {
         title: "Arquitetura frontend",
-        text: "Monorepos, design tokens, bibliotecas de componentes e configurações reutilizáveis de TypeScript e ESLint.",
+        text: "Monorepos, design tokens, bibliotecas de componentes, modelos de dados e configurações reutilizáveis de TypeScript e ESLint.",
       },
       {
         title: "Qualidade e testes",
-        text: "Jest, Cypress e React Testing Library em fluxos críticos, com pipelines de CI antes do deploy.",
+        text: "Jest, Cypress e React Testing Library em fluxos críticos, com pipelines de CI/CD usando AWS, AWS CLI, Google Cloud e GitHub Actions.",
       },
       {
         title: "UX/UI e design systems",
@@ -67,7 +72,8 @@ export const stack: StackContent = {
     items: [
       "Design systems customizáveis documentados em Storybook",
       "Frontends em React, Vue e Next.js com TypeScript",
-      "APIs, integrações e automações em Node.js",
+      "APIs, integrações, algoritmos e automações em Node.js",
+      "Modelagem de dados com MySQL e bancos NoSQL",
       "Dashboards, apps web e ferramentas internas",
       "Testes automatizados, CI/CD e melhoria contínua de performance",
     ],
@@ -76,7 +82,7 @@ export const stack: StackContent = {
     title: "Setores e contextos",
     items: [
       {
-        title: "Saúde e banca",
+        title: "Saúde e setor bancário",
         text: "Unimed Paraná, Paraná Banco, banco next e Serasa — apps, design systems e produtos digitais.",
       },
       {
@@ -89,7 +95,7 @@ export const stack: StackContent = {
       },
       {
         title: "Mídia e agências",
-        text: "Grupo Globo/GPC, Get Chute e marcas globais — component libraries, mobile-first e SCRUM.",
+        text: "Grupo Globo/GPC, Get Chute e marcas globais — component libraries, mobile-first e Scrum.",
       },
     ],
   },

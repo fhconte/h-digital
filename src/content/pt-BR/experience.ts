@@ -7,10 +7,10 @@ export const experience: ExperienceContent = {
     before: "Mais de uma década em produtos web — de ",
     highlight: "design systems e arquitetura frontend",
     after:
-      " a apps em produção para saúde, banca, automotivo, pesquisa e mídia.",
+      " a aplicações em produção para saúde, setor bancário, automotivo, pesquisa e mídia.",
   },
   backgroundNote:
-    "Formação em Comunicação Social (UNICURITIBA). Certificações em React, Next.js, Node.js, Docker, GraphQL e TDD. Inglês fluente, português nativo e espanhol básico.",
+    "Formação em Comunicação Social (UNICURITIBA). Certificações em React, Next.js, Node.js, Docker, GraphQL e TDD. Experiência com modelos de dados, algoritmos em ambientes JavaScript, bancos MySQL e NoSQL, AWS, AWS CLI e Google Cloud em fluxos de CI/CD. Inglês fluente, português nativo e espanhol básico.",
   highlights: {
     title: "Produtos em destaque",
     description:
@@ -23,7 +23,7 @@ export const experience: ExperienceContent = {
         {
           title: "Tarmac · Levante — Web Engineer",
           description:
-            "Jan 2025 — presente · Remoto. Projeto open-source para rede global de pesquisa educacional. TypeScript, Zod, monorepo, Cypress e features de configuração de estudos, participantes, atividades e analytics.",
+            "Jan 2025 — presente · Remoto. Projeto open-source para rede global de pesquisa educacional. TypeScript, Zod, monorepo, Cypress e funcionalidades de configuração de estudos, participantes, atividades e analytics.",
         },
         {
           title: "Premiersoft · Serasa — Senior Frontend Engineer",
@@ -43,7 +43,7 @@ export const experience: ExperienceContent = {
         {
           title: "Wipro · banco next — Frontend Engineer",
           description:
-            "Ago 2020 — Abr 2022 · Remoto. Interface com cliente, requisitos, testes funcionais e frontend expert. React, TypeScript, Jest, Styled Components, Web Components, Next.js e design system.",
+            "Ago 2020 — Abr 2022 · Remoto. Interface com cliente, requisitos, testes funcionais e referência técnica em frontend. React, TypeScript, Jest, Styled Components, Web Components, Next.js e design system.",
         },
         {
           title: "H Digital — Senior Frontend Developer",
@@ -58,12 +58,12 @@ export const experience: ExperienceContent = {
         {
           title: "Get Chute — Frontend Developer",
           description:
-            "Abr 2014 — Jan 2015 · Remoto. Projetos para Coca-Cola, Land Rover, Visa, Microsoft, Vogue e outras marcas globais. JavaScript, Sass, wireframes e SCRUM.",
+            "Abr 2014 — Jan 2015 · Remoto. Projetos para Coca-Cola, Land Rover, Visa, Microsoft, Vogue e outras marcas globais. JavaScript, Sass, wireframes e Scrum.",
         },
         {
           title: "Grupo Globo · GPC — Frontend Developer",
           description:
-            "Abr 2013 — Abr 2014 · Curitiba. Transformação digital de marca jornalística: branding guidelines, component library, patterns mobile e prototipação.",
+            "Abr 2013 — Abr 2014 · Curitiba. Transformação digital de marca jornalística: branding guidelines, component library, padrões mobile e prototipação.",
         },
         {
           title: "Positivo Tecnologia — Frontend Developer Jr",

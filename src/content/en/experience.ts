@@ -10,7 +10,7 @@ export const experience: ExperienceContent = {
       " to production apps in healthcare, banking, automotive, research, and media.",
   },
   backgroundNote:
-    "Bachelor's in Social Communication (UNICURITIBA). Certifications in React, Next.js, Node.js, Docker, GraphQL, and TDD. Fluent English, native Portuguese, elementary Spanish.",
+    "Bachelor's in Social Communication (UNICURITIBA). Certifications in React, Next.js, Node.js, Docker, GraphQL, and TDD. Experience with data models, algorithms in JavaScript environments, MySQL and NoSQL databases, AWS, AWS CLI, and Google Cloud in CI/CD workflows. Fluent English, native Portuguese, elementary Spanish.",
   highlights: {
     title: "Highlighted products",
     description:
@@ -58,7 +58,7 @@ export const experience: ExperienceContent = {
         {
           title: "Get Chute — Frontend Developer",
           description:
-            "Apr 2014 — Jan 2015 · Remote. Projects for Coca-Cola, Land Rover, Visa, Microsoft, Vogue, and other global brands. JavaScript, Sass, wireframes, and SCRUM.",
+            "Apr 2014 — Jan 2015 · Remote. Projects for Coca-Cola, Land Rover, Visa, Microsoft, Vogue, and other global brands. JavaScript, Sass, wireframes, and Scrum.",
         },
         {
           title: "Grupo Globo · GPC — Frontend Developer",
