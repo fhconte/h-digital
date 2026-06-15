@@ -83,7 +83,7 @@ export const stack: StackContent = {
     items: [
       {
         title: "Healthcare & banking",
-        text: "Unimed Paraná, Paraná Banco, banco next, and Serasa — apps, design systems, and digital products.",
+        text: "Unimed Paraná, Paraná Banco, next.me, and Serasa — apps, design systems, and digital products.",
       },
       {
         title: "Automotive & enterprise",
@@ -91,7 +91,7 @@ export const stack: StackContent = {
       },
       {
         title: "Research & education",
-        text: "Levante (global educational research network), Positivo Tecnologia, and online exam platforms.",
+        text: "Levante Dashboard (global educational research network), Positivo Tecnologia, and online exam platforms.",
       },
       {
         title: "Media & agencies",

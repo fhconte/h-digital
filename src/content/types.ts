@@ -16,6 +16,8 @@ export type FocusPoint = {
 export type LabeledItem = {
   title: string;
   text: string;
+  href?: string;
+  hrefLabel?: string;
 };
 
 export type TextWithHighlight = {
@@ -87,7 +89,7 @@ export type ExperienceContent = {
   backgroundNote: string;
   highlights: {
     title: string;
-    description: string;
+    items: LabeledItem[];
   };
   periods: ExperiencePeriod[];
   cta: TextWithLink;

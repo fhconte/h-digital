@@ -13,15 +13,41 @@ export const experience: ExperienceContent = {
     "Formação em Comunicação Social (UNICURITIBA). Certificações em React, Next.js, Node.js, Docker, GraphQL e TDD. Experiência com modelos de dados, algoritmos em ambientes JavaScript, bancos MySQL e NoSQL, AWS, AWS CLI e Google Cloud em fluxos de CI/CD. Inglês fluente, português nativo e espanhol básico.",
   highlights: {
     title: "Produtos em destaque",
-    description:
-      "Levante (levante-network.org), design system Serasa, Volvo Connect, banco next, App Unimed Paraná e pbconsignado.com.br.",
+    items: [
+      {
+        title: "Levante Dashboard",
+        text: "Plataforma open-source para rede global de pesquisa educacional, com configuração de estudos, participantes, atividades e analytics.",
+        href: "https://github.com/levante-framework/levante-dashboard/",
+        hrefLabel: "Ver repositório",
+      },
+      {
+        title: "Design system Serasa",
+        text: "Biblioteca React em monorepo com design tokens, Storybook, Turborepo, Changesets, Vite, Jest, Cypress e Vanilla Extract.",
+      },
+      {
+        title: "Volvo Connect",
+        text: "MVP greenfield para o Volvo Group, integrando frontend, GraphQL, BDD, Figma, data science, backend, design e negócio.",
+      },
+      {
+        title: "next.me",
+        text: "Frontend para banco digital com React, TypeScript, testes, Web Components, Next.js, Styled Components e integração com design system.",
+      },
+      {
+        title: "App Unimed Paraná",
+        text: "Experiência web e mobile em saúde, construída com React, Ionic e Angular para serviços voltados a beneficiários.",
+      },
+      {
+        title: "pbconsignado.com.br",
+        text: "Produto bancário para jornadas de crédito consignado, desenvolvido no contexto da Holanda Digital com o Paraná Banco.",
+      },
+    ],
   },
   periods: [
     {
       label: "2022 — presente",
       roles: [
         {
-          title: "Tarmac · Levante, Select Quote — Web Engineer",
+          title: "Tarmac · Levante Dashboard, Select Quote — Web Engineer",
           description:
             "Jan 2025 — presente · Remoto. Projeto open-source para rede global de pesquisa educacional. TypeScript, Zod, monorepo, Cypress e funcionalidades de configuração de estudos, participantes, atividades e analytics.",
         },
@@ -41,7 +67,7 @@ export const experience: ExperienceContent = {
       label: "2015 — 2022",
       roles: [
         {
-          title: "Wipro · banco next — Frontend Engineer",
+          title: "Wipro · next.me — Frontend Engineer",
           description:
             "Ago 2020 — Abr 2022 · Remoto. Interface com cliente, requisitos, testes funcionais e referência técnica em frontend. React, TypeScript, Jest, Styled Components, Web Components, Next.js e design system.",
         },
