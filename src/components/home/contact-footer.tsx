@@ -7,6 +7,7 @@ import { CONTACT_EMAIL, contactMailto } from "@/lib/contact";
 export function ContactFooter() {
   const content = useContent();
   const { contact, sections } = content;
+  const linkedIn = contact.socialLinks.find((link) => link.label === "LinkedIn");
 
   return (
     <footer
@@ -27,6 +28,17 @@ export function ContactFooter() {
               {contact.intro.link}
             </a>
             {contact.intro.after}
+            {contact.intro.secondaryLink && linkedIn ? (
+              <a
+                href={linkedIn.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-accent underline-offset-8 transition-opacity hover:opacity-80"
+              >
+                {contact.intro.secondaryLink}
+              </a>
+            ) : null}
+            {contact.intro.secondaryLink && linkedIn ? "." : null}
           </p>
           <p className="mt-6 text-base text-white/60 sm:text-lg">
             {contact.note}

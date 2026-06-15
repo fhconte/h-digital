@@ -5,7 +5,8 @@ export const contact: ContactContent = {
   intro: {
     before: "Want to talk about opportunities or projects? ",
     link: "Send me an email",
-    after: " or connect with me on LinkedIn.",
+    after: " or connect with me on ",
+    secondaryLink: "LinkedIn",
   },
   note: "Curitiba, Brazil · Available for remote work.",
   socialLinks: [

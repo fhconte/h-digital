@@ -100,7 +100,9 @@ export type SocialLink = {
 
 export type ContactContent = {
   eyebrow: string;
-  intro: TextWithLink;
+  intro: TextWithLink & {
+    secondaryLink?: string;
+  };
   note: string;
   socialLinks: SocialLink[];
   emailSubjects: {
