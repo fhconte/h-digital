@@ -47,7 +47,7 @@ export const experience: ExperienceContent = {
       label: "2022 — presente",
       roles: [
         {
-          title: "Tarmac · Levante Dashboard, Select Quote — Web Engineer",
+          title: "Tarmac · Levante, Select Quote — Web Engineer",
           description:
             "Jan 2025 — presente · Remoto. Projeto open-source para rede global de pesquisa educacional. TypeScript, Zod, monorepo, Cypress e funcionalidades de configuração de estudos, participantes, atividades e analytics.",
         },
