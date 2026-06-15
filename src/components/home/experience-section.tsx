@@ -1,7 +1,6 @@
 "use client";
 
 import { useContent } from "@/i18n/locale-provider";
-import { contactMailto } from "@/lib/contact";
 
 export function ExperienceSection() {
   const content = useContent();
@@ -61,16 +60,6 @@ export function ExperienceSection() {
         </div>
       ))}
 
-      <p className="mt-12 max-w-3xl text-neutral-600">
-        {experience.cta.before}
-        <a
-          href={contactMailto("experience", content)}
-          className="font-medium text-accent underline-offset-4 hover:underline"
-        >
-          {experience.cta.link}
-        </a>
-        {experience.cta.after}
-      </p>
     </section>
   );
 }
