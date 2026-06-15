@@ -14,19 +14,19 @@ export const experience: ExperienceContent = {
   highlights: {
     title: "Produtos em destaque",
     description:
-      "Levante (levante-network.org), design system Serasa/Premiersoft, Volvo Connect, banco next, App Unimed Paraná e pbconsignado.com.br.",
+      "Levante (levante-network.org), design system Serasa, Volvo Connect, banco next, App Unimed Paraná e pbconsignado.com.br.",
   },
   periods: [
     {
       label: "2022 — presente",
       roles: [
         {
-          title: "Tarmac · Levante — Web Engineer",
+          title: "Tarmac · Levante, Select Quote — Web Engineer",
           description:
             "Jan 2025 — presente · Remoto. Projeto open-source para rede global de pesquisa educacional. TypeScript, Zod, monorepo, Cypress e funcionalidades de configuração de estudos, participantes, atividades e analytics.",
         },
         {
-          title: "Premiersoft · Serasa — Senior Frontend Engineer",
+          title: "Serasa — Senior Frontend Engineer",
           description:
             "Fev 2024 — Dez 2024 · Remoto. Arquitetura e liderança de design system em monorepo do zero: design tokens, biblioteca React, Storybook, Turborepo, Changesets, Vite, Jest, Cypress e Vanilla Extract.",
         },
@@ -46,7 +46,7 @@ export const experience: ExperienceContent = {
             "Ago 2020 — Abr 2022 · Remoto. Interface com cliente, requisitos, testes funcionais e referência técnica em frontend. React, TypeScript, Jest, Styled Components, Web Components, Next.js e design system.",
         },
         {
-          title: "H Digital — Senior Frontend Developer",
+          title: "Holanda Digital — Senior Frontend Developer",
           description:
             "Fev 2015 — Jul 2020 · Remoto. Unimed Paraná (React, Ionic, Angular, app beneficiário), Paraná Banco (React, Redux, Storybook) e pbconsignado.com.br.",
         },
@@ -61,7 +61,7 @@ export const experience: ExperienceContent = {
             "Abr 2014 — Jan 2015 · Remoto. Projetos para Coca-Cola, Land Rover, Visa, Microsoft, Vogue e outras marcas globais. JavaScript, Sass, wireframes e Scrum.",
         },
         {
-          title: "Grupo Globo · GPC — Frontend Developer",
+          title: "Grupo Globo · Gazeta do Povo — Frontend Developer",
           description:
             "Abr 2013 — Abr 2014 · Curitiba. Transformação digital de marca jornalística: branding guidelines, component library, padrões mobile e prototipação.",
         },

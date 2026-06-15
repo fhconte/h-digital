@@ -4,7 +4,7 @@ import Link from "next/link";
 import { useState } from "react";
 import { LocaleSwitcher } from "@/components/locale-switcher";
 import { useContent, useLocale } from "@/i18n/locale-provider";
-import { BRAND_NAME } from "@/lib/brand";
+import { NAME } from "@/lib/brand";
 
 export function SiteHeader() {
   const { locale } = useLocale();
@@ -23,7 +23,7 @@ export function SiteHeader() {
           onClick={closeMenu}
         >
           <span className="text-lg font-semibold tracking-tight text-neutral-900 sm:text-xl">
-            {BRAND_NAME}
+            {NAME}
           </span>
           <span className="mt-1 block text-xs font-medium uppercase tracking-[0.15em] text-neutral-500">
             Software Engineer

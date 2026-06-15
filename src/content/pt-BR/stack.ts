@@ -95,7 +95,7 @@ export const stack: StackContent = {
       },
       {
         title: "Mídia e agências",
-        text: "Grupo Globo/GPC, Get Chute e marcas globais — component libraries, mobile-first e Scrum.",
+        text: "Grupo Globo/Gazeta do Povo, Get Chute e marcas globais — component libraries, mobile-first e Scrum.",
       },
     ],
   },

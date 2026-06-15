@@ -1,4 +1,4 @@
-import { BRAND_NAME } from "@/lib/brand";
+import { NAME } from "@/lib/brand";
 import type { SiteContent } from "@/content/types";
 
 export const CONTACT_EMAIL = "flaviohconte@gmail.com";
@@ -9,6 +9,6 @@ export function contactMailto(
   source: ContactSource,
   content: SiteContent,
 ): string {
-  const subject = `${content.contact.emailSubjects[source]} | ${BRAND_NAME}`;
+  const subject = `${content.contact.emailSubjects[source]} | ${NAME}`;
   return `mailto:${CONTACT_EMAIL}?subject=${encodeURIComponent(subject)}`;
 }

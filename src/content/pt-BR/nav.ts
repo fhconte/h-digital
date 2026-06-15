@@ -1,6 +1,6 @@
 import { sections } from "@/content/pt-BR/sections";
 import type { NavContent } from "@/content/types";
-import { BRAND_NAME } from "@/lib/brand";
+import { NAME } from "@/lib/brand";
 
 export const nav: NavContent = {
   items: [
@@ -8,7 +8,7 @@ export const nav: NavContent = {
     { label: "Experiência", href: `#${sections.experience}` },
     { label: "Contato", href: `#${sections.contact}` },
   ],
-  homeAriaLabel: `${BRAND_NAME}, início`,
+  homeAriaLabel: `${NAME}, início`,
   mainMenuAriaLabel: "Menu principal",
   mobileMenuAriaLabel: "Menu mobile",
   openMenu: "Abrir menu",

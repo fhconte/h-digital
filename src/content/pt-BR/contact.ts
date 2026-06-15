@@ -3,11 +3,11 @@ import type { ContactContent } from "@/content/types";
 export const contact: ContactContent = {
   eyebrow: "Contato",
   intro: {
-    before: "Quer conversar sobre oportunidades ou projetos? ",
-    link: "Escreve para mim",
-    after: " — respondo o quanto antes.",
+    before: "Vamos conversar sobre oportunidades ou projetos? ",
+    link: "Me envie um e-mail",
+    after: " — respondo em breve.",
   },
-  note: "Curitiba, Brasil · Disponível para remoto.",
+  note: "Curitiba, Brasil · Disponível para trabalho remoto.",
   socialLinks: [
     {
       label: "LinkedIn",
