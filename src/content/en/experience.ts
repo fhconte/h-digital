@@ -67,7 +67,7 @@ export const experience: ExperienceContent = {
       label: "2015 — 2022",
       roles: [
         {
-          title: "Wipro · next.me — Frontend Engineer",
+          title: "Wipro · Banco Next — Frontend Engineer",
           description:
             "Aug 2020 — Apr 2022 · Remote. Client interface, requirements, functional testing, and frontend expert role. React, TypeScript, Jest, Styled Components, Web Components, Next.js, and design system.",
         },
