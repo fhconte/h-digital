@@ -107,13 +107,13 @@ export const experience: ExperienceContent = {
           title:
             "DuPont Sustainable Solutions — Trainee Designer & Frontend Developer",
           description:
-            "May 2010 — Apr 2012 · Curitiba, on-site. Design and frontend work for video training and marketing operations for medium and large companies: product catalogs, institutional presentations, certificates, stationery, HTML/CSS marketing emails and newsletters, multilingual writing and editing, workshop support, campaign analysis, and print production interface. Company websites: dupont.com and consultdss.com.",
+            "May 2010 — Apr 2012 · Curitiba, on-site. Design and frontend for video training and marketing operations: catalogs, presentations, certificates, stationery, HTML/CSS emails and newsletters, workshop support, campaign analysis, and print production interface.",
         },
         {
           title:
             "TerraForum Consultores · HSBC — Trainee Designer & Frontend Developer",
           description:
-            "May 2009 — May 2010 · Curitiba, on-site. Digital design and frontend publishing for HSBC Brazil's internal communication platform, delivered on a customized Microsoft SharePoint portal with HTML, CSS, and JavaScript. UI design, illustration, storytelling, and fast visual solutions for daily and weekly employee news content. Project reference: business.hsbc.com.br.",
+            "May 2009 — May 2010 · Curitiba, on-site. Digital design and frontend publishing for HSBC Brazil's internal communication platform on customized Microsoft SharePoint, using HTML, CSS, and JavaScript.",
         },
       ],
     },
