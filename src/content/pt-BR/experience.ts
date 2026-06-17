@@ -21,24 +21,26 @@ export const experience: ExperienceContent = {
         hrefLabel: "Ver repositório",
       },
       {
-        title: "Design system Serasa",
-        text: "Biblioteca React em monorepo com design tokens, Storybook, Turborepo, Changesets, Vite, Jest, Cypress e Vanilla Extract.",
+        title: "Serasa Design System",
+        text: "Biblioteca React privada que arquitetei em monorepo com design tokens, Storybook, Turborepo, Changesets, Vite, Jest, Cypress e Vanilla Extract.",
       },
       {
-        title: "Volvo Connect",
+        title: "Volvo Connect Truck Fuel Advisor",
         text: "MVP greenfield para o Volvo Group, integrando frontend, GraphQL, BDD, Figma, data science, backend, design e negócio.",
+        href: "https://www.volvotrucks.com.br/pt-br/services/optimized-business/volvo-connect.html",
+        hrefLabel: "Ver site",
       },
       {
         title: "next.me",
-        text: "Frontend para banco digital com React, TypeScript, testes, Web Components, Next.js, Styled Components e integração com design system.",
+        text: "Frontend para banco digital construído em Next.js com React, TypeScript, testes, Web Components, Styled Components e integração com design system.",
+        href: "https://next.me/",
+        hrefLabel: "Ver site",
       },
       {
-        title: "App Unimed Paraná",
+        title: "Unimed Paraná Apps",
         text: "Experiência web e mobile em saúde, construída com React, Ionic e Angular para serviços voltados a beneficiários.",
-      },
-      {
-        title: "pbconsignado.com.br",
-        text: "Produto bancário para jornadas de crédito consignado, desenvolvido no contexto da Holanda Digital com o Paraná Banco.",
+        href: "https://www.unimed.coop.br/site/web/parana/aplicativos",
+        hrefLabel: "Ver site",
       },
     ],
   },
@@ -59,7 +61,7 @@ export const experience: ExperienceContent = {
         {
           title: "Volvo Group — Senior Frontend Engineer",
           description:
-            "Mai 2022 — Out 2022 · Remoto. MVP greenfield do Volvo Connect com BDD, React, GraphQL, Figma e times de data science, backend, design e negócio.",
+            "Mai 2022 — Out 2022 · Remoto. MVP greenfield do Volvo Connect Truck Fuel Advisor com BDD, React, GraphQL, Figma e times de data science, backend, design e negócio.",
         },
       ],
     },
@@ -74,7 +76,7 @@ export const experience: ExperienceContent = {
         {
           title: "Holanda Digital — Senior Frontend Developer",
           description:
-            "Fev 2015 — Jul 2020 · Remoto. Unimed Paraná (React, Ionic, Angular, app beneficiário), Paraná Banco (React, Redux, Storybook) e pbconsignado.com.br.",
+            "Fev 2015 — Jul 2020 · Remoto. Unimed Paraná Apps (React, Ionic, Angular) e Paraná Banco (React, Redux, Storybook).",
         },
       ],
     },
