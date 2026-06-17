@@ -100,6 +100,23 @@ export const experience: ExperienceContent = {
         },
       ],
     },
+    {
+      label: "2009 — 2012",
+      roles: [
+        {
+          title:
+            "DuPont Sustainable Solutions — Trainee Designer & Frontend Developer",
+          description:
+            "Mai 2010 — Abr 2012 · Curitiba, presencial. Design e frontend para treinamentos em vídeo e operações de marketing para médias e grandes empresas: catálogos de produto, apresentações institucionais, certificados, papelaria, e-mails marketing e newsletters em HTML/CSS, escrita e edição multilíngue, suporte a workshops, análise de campanhas e interface com gráficas. Sites da empresa: dupont.com e consultdss.com.",
+        },
+        {
+          title:
+            "TerraForum Consultores · HSBC — Trainee Designer & Frontend Developer",
+          description:
+            "Mai 2009 — Mai 2010 · Curitiba, presencial. Design digital e publicação frontend para a plataforma de comunicação interna do HSBC Brasil, em um portal Microsoft SharePoint customizado com HTML, CSS e JavaScript. UI design, ilustração, storytelling e soluções visuais rápidas para conteúdos diários e semanais de notícias para colaboradores. Referência do projeto: business.hsbc.com.br.",
+        },
+      ],
+    },
   ],
   cta: {
     before: "Quer saber mais sobre algum projeto? ",
