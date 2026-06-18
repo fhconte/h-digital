@@ -59,6 +59,69 @@ export function ExperienceSection() {
         </ul>
       </div>
 
+      <div className="mt-12">
+        <h3 className="text-lg font-semibold text-neutral-900">
+          {experience.certifications.title}
+        </h3>
+        <ul className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+          {experience.certifications.items.map((certification) => (
+            <li
+              key={`${certification.issuer}-${certification.title}`}
+              className="flex flex-col border border-neutral-200 bg-white p-5"
+            >
+              <h4 className="text-base font-semibold text-neutral-900">
+                {certification.title}
+              </h4>
+              {certification.issuerDetail ? (
+                <p className="mt-3 text-sm leading-6 text-neutral-600">
+                  {certification.issuerDetail}
+                </p>
+              ) : null}
+              <dl className="mt-4 space-y-2 text-xs leading-5 text-neutral-600">
+                <div>
+                  <dt className="sr-only">
+                    {experience.certifications.issuedLabel}
+                  </dt>
+                  <dd>{certification.issued}</dd>
+                </div>
+                {certification.credentialId ? (
+                  <div className="flex flex-wrap gap-x-1.5">
+                    <dt className="font-medium text-neutral-900">
+                      {experience.certifications.credentialIdLabel}
+                    </dt>
+                    <dd className="break-all">{certification.credentialId}</dd>
+                  </div>
+                ) : null}
+              </dl>
+              <div className="mt-auto flex items-end justify-between gap-3 pt-5">
+                {certification.href ? (
+                  <a
+                    href={certification.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center text-xs font-semibold uppercase tracking-[0.12em] text-accent underline-offset-4 transition-opacity hover:opacity-75 hover:underline"
+                  >
+                    {certification.hrefLabel}
+                  </a>
+                ) : null}
+                <ul className="ml-auto flex flex-wrap justify-end gap-2">
+                  {[certification.issuer, ...(certification.badges ?? [])].map(
+                    (badge) => (
+                      <li
+                        key={badge}
+                        className="border border-neutral-200 bg-neutral-50 px-2.5 py-1 text-[0.7rem] font-medium uppercase tracking-[0.12em] text-neutral-500"
+                      >
+                        {badge}
+                      </li>
+                    ),
+                  )}
+                </ul>
+              </div>
+            </li>
+          ))}
+        </ul>
+      </div>
+
       {experience.periods.map((period, index) => (
         <div key={period.label} className={index === 0 ? "mt-12" : "mt-16"}>
           <h3 className="text-lg font-semibold text-neutral-900">

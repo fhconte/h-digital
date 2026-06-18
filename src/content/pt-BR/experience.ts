@@ -10,7 +10,7 @@ export const experience: ExperienceContent = {
       " a aplicações em produção para saúde, setor bancário, automotivo, pesquisa e mídia.",
   },
   backgroundNote:
-    "Formação em Comunicação Social (UNICURITIBA). Certificações em React, Next.js, Node.js, Docker, GraphQL e TDD. Experiência com modelos de dados, algoritmos em ambientes JavaScript, bancos MySQL e NoSQL, AWS, AWS CLI e Google Cloud em fluxos de CI/CD. Inglês fluente, português nativo e espanhol básico.",
+    "Formação em Comunicação Social (UNICURITIBA). Certificações em React, Redux, Docker, JavaScript avançado, HTML5 e CSS3. Experiência com modelos de dados, algoritmos em ambientes JavaScript, bancos MySQL e NoSQL, AWS, AWS CLI e Google Cloud em fluxos de CI/CD. Inglês fluente, português nativo e espanhol básico.",
   highlights: {
     title: "Produtos em destaque",
     items: [
@@ -41,6 +41,69 @@ export const experience: ExperienceContent = {
         text: "Experiência web e mobile em saúde, construída com React, Ionic e Angular para serviços voltados a beneficiários.",
         href: "https://www.unimed.coop.br/site/web/parana/aplicativos",
         hrefLabel: "Ver site",
+      },
+    ],
+  },
+  certifications: {
+    title: "Licenças e certificações",
+    issuedLabel: "Data de emissão",
+    credentialIdLabel: "ID da credencial",
+    items: [
+      {
+        title: "HTML5 e CSS3 Advanced",
+        issuer: "Adobe",
+        issuerDetail: "ENG DTP & Multimídia - São Paulo - SP",
+        issued: "Emitido em jul. de 2012",
+      },
+      {
+        title: "Docker for Javascript Developers",
+        issuer: "Udemy",
+        issued: "Emitido em jun. de 2020",
+        credentialId: "6597085f-03d2-4636-ad71-c741f695162e",
+        href: "https://udemy-certificate.s3.amazonaws.com/image/UC-6597085f-03d2-4636-ad71-c741f695162e.jpg",
+        hrefLabel: "Ver credencial",
+      },
+      {
+        title: "Modern React with Redux - Stephen Grider",
+        issuer: "Udemy",
+        issued: "Emitido em abr. de 2018",
+        href: "https://www.udemy.com/certificate/UC-GZE7JTYT/",
+        hrefLabel: "Ver credencial",
+      },
+      {
+        title:
+          "JavaScript Avançado III: ES6, Orientação a Objetos e Design Patterns",
+        issuer: "Alura",
+        issued: "Emitido em abr. de 2017",
+        credentialId: "cc846478-8455-4dd5-9fd7-b4bee8f92ee7",
+        href: "https://cursos.alura.com.br/certificate/cc846478-8455-4dd5-9fd7-b4bee8f92ee7",
+        hrefLabel: "Ver credencial",
+      },
+      {
+        title:
+          "JavaScript Avançado II: ES6, Orientação a Objetos e Design Patterns",
+        issuer: "Alura",
+        issued: "Emitido em abr. de 2017",
+        credentialId: "730f03ad-d8a6-447b-b64f-c7e5753d6881",
+        href: "https://cursos.alura.com.br/certificate/730f03ad-d8a6-447b-b64f-c7e5753d6881",
+        hrefLabel: "Ver credencial",
+      },
+      {
+        title:
+          "JavaScript Avançado I: ES6, Orientação a Objetos e Design Patterns",
+        issuer: "Alura",
+        issued: "Emitido em mar. de 2018",
+        credentialId: "0f537e63-2dbd-498c-b7cf-3ac69dfb5544",
+        href: "https://cursos.alura.com.br/certificate/0f537e63-2dbd-498c-b7cf-3ac69dfb5544",
+        hrefLabel: "Ver credencial",
+      },
+      {
+        title: "JavaScript: Programando na linguagem da web",
+        issuer: "Alura",
+        issued: "Emitido em mar. de 2016",
+        credentialId: "a52c6571-441e-4753-b84c-063b566e1230",
+        href: "https://cursos.alura.com.br/certificate/a52c6571-441e-4753-b84c-063b566e1230",
+        hrefLabel: "Ver credencial",
       },
     ],
   },

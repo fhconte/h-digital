@@ -3,6 +3,24 @@ export type ExperienceRole = {
   description: string;
 };
 
+export type CertificationItem = {
+  title: string;
+  issuer: string;
+  badges?: string[];
+  issuerDetail?: string;
+  issued: string;
+  credentialId?: string;
+  href?: string;
+  hrefLabel?: string;
+};
+
+export type CertificationsContent = {
+  title: string;
+  issuedLabel: string;
+  credentialIdLabel: string;
+  items: CertificationItem[];
+};
+
 export type ExperiencePeriod = {
   label: string;
   roles: ExperienceRole[];
@@ -91,6 +109,7 @@ export type ExperienceContent = {
     title: string;
     items: LabeledItem[];
   };
+  certifications: CertificationsContent;
   periods: ExperiencePeriod[];
   cta: TextWithLink;
 };
