@@ -50,12 +50,6 @@ export const experience: ExperienceContent = {
     credentialIdLabel: "Credential ID",
     items: [
       {
-        title: "Advanced HTML5 and CSS3",
-        issuer: "Adobe",
-        issuerDetail: "ENG DTP & Multimídia - São Paulo - SP",
-        issued: "Issued Jul 2012",
-      },
-      {
         title: "Docker for Javascript Developers",
         issuer: "Udemy",
         issued: "Issued Jun 2020",
@@ -105,6 +99,12 @@ export const experience: ExperienceContent = {
         href: "https://cursos.alura.com.br/certificate/a52c6571-441e-4753-b84c-063b566e1230",
         hrefLabel: "View credential",
       },
+      {
+        title: "Advanced HTML5 and CSS3",
+        issuer: "Adobe",
+        issuerDetail: "ENG DTP & Multimídia - São Paulo - SP",
+        issued: "Issued Jul 2012",
+      },
     ],
   },
   periods: [
@@ -112,9 +112,9 @@ export const experience: ExperienceContent = {
       label: "2022 — present",
       roles: [
         {
-          title: "Tarmac · Levante, Select Quote — Web Engineer",
+          title: "Tarmac · Levante, SelectQuote — Web Engineer",
           description:
-            "Jan 2025 — present · Remote. Open-source project for a global educational research network. TypeScript, Zod, monorepo, Cypress, and features for study configuration, participants, activities, and analytics.",
+            "Jan 2025 — present · Remote. Web engineering work across client projects, including Levante, an open-source platform for a global educational research network, and SelectQuote, a major U.S. insurance client. TypeScript, Zod, monorepo, Cypress, study configuration, participants, activities, analytics, and insurance-related workflows.",
         },
         {
           title: "Serasa — Senior Frontend Engineer",
@@ -139,7 +139,7 @@ export const experience: ExperienceContent = {
         {
           title: "Holanda Digital — Senior Frontend Developer",
           description:
-            "Feb 2015 — Jul 2020 · Remote. Unimed Paraná Apps (React, Ionic, Angular) and Paraná Banco (React, Redux, Storybook).",
+            "Feb 2015 — Jul 2020 · Remote. Unimed Paraná Apps (React, Ionic, Angular), Paraná Banco (React, Redux, Storybook), and a 9-month frontend engineering consultancy for Agrotis.",
         },
       ],
     },

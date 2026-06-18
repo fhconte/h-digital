@@ -50,12 +50,6 @@ export const experience: ExperienceContent = {
     credentialIdLabel: "ID da credencial",
     items: [
       {
-        title: "HTML5 e CSS3 Advanced",
-        issuer: "Adobe",
-        issuerDetail: "ENG DTP & Multimídia - São Paulo - SP",
-        issued: "Emitido em jul. de 2012",
-      },
-      {
         title: "Docker for Javascript Developers",
         issuer: "Udemy",
         issued: "Emitido em jun. de 2020",
@@ -105,6 +99,12 @@ export const experience: ExperienceContent = {
         href: "https://cursos.alura.com.br/certificate/a52c6571-441e-4753-b84c-063b566e1230",
         hrefLabel: "Ver credencial",
       },
+      {
+        title: "HTML5 e CSS3 Advanced",
+        issuer: "Adobe",
+        issuerDetail: "ENG DTP & Multimídia - São Paulo - SP",
+        issued: "Emitido em jul. de 2012",
+      },
     ],
   },
   periods: [
@@ -112,9 +112,9 @@ export const experience: ExperienceContent = {
       label: "2022 — presente",
       roles: [
         {
-          title: "Tarmac · Levante, Select Quote — Web Engineer",
+          title: "Tarmac · Levante, SelectQuote — Web Engineer",
           description:
-            "Jan 2025 — presente · Remoto. Projeto open-source para rede global de pesquisa educacional. TypeScript, Zod, monorepo, Cypress e funcionalidades de configuração de estudos, participantes, atividades e analytics.",
+            "Jan 2025 — presente · Remoto. Engenharia web em projetos de clientes, incluindo Levante, uma plataforma open-source para rede global de pesquisa educacional, e SelectQuote, um grande cliente da área de seguros nos EUA. TypeScript, Zod, monorepo, Cypress, configuração de estudos, participantes, atividades, analytics e fluxos relacionados a seguros.",
         },
         {
           title: "Serasa — Senior Frontend Engineer",
@@ -139,7 +139,7 @@ export const experience: ExperienceContent = {
         {
           title: "Holanda Digital — Senior Frontend Developer",
           description:
-            "Fev 2015 — Jul 2020 · Remoto. Unimed Paraná Apps (React, Ionic, Angular) e Paraná Banco (React, Redux, Storybook).",
+            "Fev 2015 — Jul 2020 · Remoto. Unimed Paraná Apps (React, Ionic, Angular), Paraná Banco (React, Redux, Storybook) e consultoria de 9 meses como engenheira frontend para Agrotis.",
         },
       ],
     },
